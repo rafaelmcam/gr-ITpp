@@ -18,6 +18,9 @@ e procurar pela pasta gnuradio-doc (meu pc é usr/share/doc/gnuradio-doc), subpa
 
 No meu pc é o mesmo que copiar o link abaixo e abrir em um navegador: file:///usr/share/doc/gnuradio-doc/html/index.html
 
+# Requisito biblioteca ITpp
+
+sudo apt install libitpp-dev
 
 # Observações para instalação do módulo gr-ITpp
 
@@ -51,3 +54,21 @@ sudo make install
 sudo ldconfig
 
 se aparecer o erro que não pode gerar a documentação deletar a pasta build, depois sudo apt remove doxygen, e repetir o procedimento acima.
+
+# 3 formas de testar a instalação do módulo 
+-> Dentro da pasta build executar:
+
+make test (Ver se todos os testes são completados, "100% tests passed")
+
+-> (Teste mais importante!!!) Em qualquer pasta, abrir um terminal:
+
+python2
+
+import ITpp
+
+help(ITpp)
+
+Espera-se que quando der o help(ITpp), a seção "Package Contents" possua: ITpp_swig, _ITpp_swig e dentro da seção "Functions" possua referências aos blocos instalados até então (exemplo: "Hamming_Encoder_sptr_swigregister(...)"). Se não tiver essas referências provavelmente vai dar o erro:
+'module' object has no attribute "bloco". E o problema deve ser com o "swig" ou "pkg-config".
+
+-> Dentro da pasta "examples" executar algum dos arquivos *.grc 
