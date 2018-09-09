@@ -72,6 +72,7 @@ namespace gr {
 
       for(int j = 0; j < noutput_items; j++){
         //printf("In = %d\n", in[j]);
+        out[j] = 0;
        for (int i = 0; i<4; i++){
          uncoded(3-i) = in[j] >> i & 0x01;
          //printf("%d ", in[j] >> i & 0x01);
