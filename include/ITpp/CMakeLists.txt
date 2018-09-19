@@ -23,5 +23,7 @@
 install(FILES
     api.h
     nada.h
-    Hamming_Encoder.h DESTINATION include/ITpp
+    Hamming_Encoder.h
+    teste_general.h
+    teste_general_par2.h DESTINATION include/ITpp
 )

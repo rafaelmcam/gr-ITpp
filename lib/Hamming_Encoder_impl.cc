@@ -92,7 +92,8 @@ namespace gr {
       //printf("\n");
       //printf("Out = %d\n", out[j]);
       }
-    
+
+      //printf("noutput=%d\n", noutput_items);
       return noutput_items;
     }
 

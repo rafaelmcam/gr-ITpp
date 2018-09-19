@@ -28,6 +28,9 @@
 #include "qa_ITpp.h"
 #include "qa_nada.h"
 #include "qa_Hamming_Encoder.h"
+#include "qa_teste_general.h"
+
+#include "qa_teste_general_par2.h"
 
 CppUnit::TestSuite *
 qa_ITpp::suite()
@@ -35,6 +38,9 @@ qa_ITpp::suite()
   CppUnit::TestSuite *s = new CppUnit::TestSuite("ITpp");
   s->addTest(gr::ITpp::qa_nada::suite());
   s->addTest(gr::ITpp::qa_Hamming_Encoder::suite());
+  s->addTest(gr::ITpp::qa_teste_general::suite());
+
+  s->addTest(gr::ITpp::qa_teste_general_par2::suite());
 
   return s;
 }

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<block>
+  <name>teste_general_par2</name>
+  <key>ITpp_teste_general_par2</key>
+  <category>[ITpp]</category>
+  <import>import ITpp</import>
+  <make>ITpp.teste_general_par2($rep, $last_value)</make>
+  <!-- Make one 'param' node for every Parameter you want settable from the GUI.
+       Sub-nodes:
+       * name
+       * key (makes the value accessible as $keyname, e.g. in the make node)
+       * type -->
+  <param>
+    <name>Repetição</name>
+    <key>rep</key>
+    <type>int</type>
+  </param>
+
+  <param>
+    <name>Last Value</name>
+    <key>last_value</key>
+    <type>int</type>
+  </param>
+
+  <!-- Make one 'sink' node per input. Sub-nodes:
+       * name (an identifier for the GUI)
+       * type
+       * vlen
+       * optional (set to 1 for optional inputs) -->
+  <sink>
+    <name>in</name>
+    <type>byte</type>
+  </sink>
+
+  <!-- Make one 'source' node per output. Sub-nodes:
+       * name (an identifier for the GUI)
+       * type
+       * vlen
+       * optional (set to 1 for optional inputs) -->
+  <source>
+    <name>out</name>
+    <type>byte</type>
+  </source>
+</block>
