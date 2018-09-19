@@ -31,6 +31,7 @@
 #include "qa_teste_general.h"
 
 #include "qa_teste_general_par2.h"
+#include "qa_teste_general_par3.h"
 
 CppUnit::TestSuite *
 qa_ITpp::suite()
@@ -41,6 +42,7 @@ qa_ITpp::suite()
   s->addTest(gr::ITpp::qa_teste_general::suite());
 
   s->addTest(gr::ITpp::qa_teste_general_par2::suite());
+  s->addTest(gr::ITpp::qa_teste_general_par3::suite());
 
   return s;
 }

@@ -20,5 +20,6 @@ install(FILES
     ITpp_nada.xml
     ITpp_Hamming_Encoder.xml
     ITpp_teste_general.xml
-    ITpp_teste_general_par2.xml DESTINATION share/gnuradio/grc/blocks
+    ITpp_teste_general_par2.xml
+    ITpp_teste_general_par3.xml DESTINATION share/gnuradio/grc/blocks
 )

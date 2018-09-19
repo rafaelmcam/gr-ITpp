@@ -12,6 +12,7 @@
 #include "ITpp/Hamming_Encoder.h"
 #include "ITpp/teste_general.h"
 #include "ITpp/teste_general_par2.h"
+#include "ITpp/teste_general_par3.h"
 %}
 
 
@@ -24,3 +25,5 @@ GR_SWIG_BLOCK_MAGIC2(ITpp, teste_general);
 
 %include "ITpp/teste_general_par2.h"
 GR_SWIG_BLOCK_MAGIC2(ITpp, teste_general_par2);
+%include "ITpp/teste_general_par3.h"
+GR_SWIG_BLOCK_MAGIC2(ITpp, teste_general_par3);

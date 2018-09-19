@@ -29,6 +29,7 @@ list(APPEND ITpp_sources
     Hamming_Encoder_impl.cc
     teste_general_impl.cc
     teste_general_par2_impl.cc
+    teste_general_par3_impl.cc
 )
 
 set(ITpp_sources "${ITpp_sources}" PARENT_SCOPE)
@@ -62,6 +63,7 @@ include_directories(${CPPUNIT_INCLUDE_DIRS})
 list(APPEND test_ITpp_sources
     ${CMAKE_CURRENT_SOURCE_DIR}/test_ITpp.cc
     ${CMAKE_CURRENT_SOURCE_DIR}/qa_ITpp.cc
+    ${CMAKE_CURRENT_SOURCE_DIR}/qa_teste_general_par3.cc
     ${CMAKE_CURRENT_SOURCE_DIR}/qa_teste_general_par2.cc
     ${CMAKE_CURRENT_SOURCE_DIR}/qa_teste_general.cc
     ${CMAKE_CURRENT_SOURCE_DIR}/qa_Hamming_Encoder.cc
