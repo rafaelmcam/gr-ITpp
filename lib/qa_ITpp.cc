@@ -32,6 +32,7 @@
 
 #include "qa_teste_general_par2.h"
 #include "qa_teste_general_par3.h"
+#include "qa_Hamming_Encoder_par.h"
 
 CppUnit::TestSuite *
 qa_ITpp::suite()
@@ -43,6 +44,7 @@ qa_ITpp::suite()
 
   s->addTest(gr::ITpp::qa_teste_general_par2::suite());
   s->addTest(gr::ITpp::qa_teste_general_par3::suite());
+  s->addTest(gr::ITpp::qa_Hamming_Encoder_par::suite());
 
   return s;
 }
