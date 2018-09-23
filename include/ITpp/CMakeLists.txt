@@ -27,5 +27,7 @@ install(FILES
     teste_general.h
     teste_general_par2.h
     teste_general_par3.h
-    Hamming_Encoder_par.h DESTINATION include/ITpp
+    Hamming_Encoder_par.h
+    Hamming_Decoder_par.h
+    BSC_Byte.h DESTINATION include/ITpp
 )

@@ -47,3 +47,5 @@ GR_ADD_TEST(qa_teste_general ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa
 GR_ADD_TEST(qa_teste_general_par2 ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_teste_general_par2.py)
 GR_ADD_TEST(qa_teste_general_par3 ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_teste_general_par3.py)
 GR_ADD_TEST(qa_Hamming_Encoder_par ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_Hamming_Encoder_par.py)
+GR_ADD_TEST(qa_Hamming_Decoder_par ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_Hamming_Decoder_par.py)
+GR_ADD_TEST(qa_BSC_Byte ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_BSC_Byte.py)

@@ -22,5 +22,7 @@ install(FILES
     ITpp_teste_general.xml
     ITpp_teste_general_par2.xml
     ITpp_teste_general_par3.xml
-    ITpp_Hamming_Encoder_par.xml DESTINATION share/gnuradio/grc/blocks
+    ITpp_Hamming_Encoder_par.xml
+    ITpp_Hamming_Decoder_par.xml
+    ITpp_BSC_Byte.xml DESTINATION share/gnuradio/grc/blocks
 )

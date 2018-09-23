@@ -14,6 +14,8 @@
 #include "ITpp/teste_general_par2.h"
 #include "ITpp/teste_general_par3.h"
 #include "ITpp/Hamming_Encoder_par.h"
+#include "ITpp/Hamming_Decoder_par.h"
+#include "ITpp/BSC_Byte.h"
 %}
 
 
@@ -30,3 +32,8 @@ GR_SWIG_BLOCK_MAGIC2(ITpp, teste_general_par2);
 GR_SWIG_BLOCK_MAGIC2(ITpp, teste_general_par3);
 %include "ITpp/Hamming_Encoder_par.h"
 GR_SWIG_BLOCK_MAGIC2(ITpp, Hamming_Encoder_par);
+%include "ITpp/Hamming_Decoder_par.h"
+GR_SWIG_BLOCK_MAGIC2(ITpp, Hamming_Decoder_par);
+
+%include "ITpp/BSC_Byte.h"
+GR_SWIG_BLOCK_MAGIC2(ITpp, BSC_Byte);
