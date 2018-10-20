@@ -105,7 +105,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>0.05</value>
+      <value>0.078</value>
     </param>
   </block>
   <block>
@@ -363,7 +363,7 @@
     </param>
     <param>
       <key>win_size</key>
-      <value>1000</value>
+      <value>100000</value>
     </param>
   </block>
   <block>
@@ -414,7 +414,7 @@
     </param>
     <param>
       <key>win_size</key>
-      <value>1000</value>
+      <value>100000</value>
     </param>
   </block>
   <block>
@@ -571,7 +571,7 @@
     </param>
     <param>
       <key>samples_per_second</key>
-      <value>samp_rate</value>
+      <value>samp_rate*10</value>
     </param>
     <param>
       <key>type</key>
