@@ -26,12 +26,8 @@
  */
 
 #include "qa_ITpp.h"
-#include "qa_nada.h"
-#include "qa_Hamming_Encoder.h"
-#include "qa_teste_general.h"
 
-#include "qa_teste_general_par2.h"
-#include "qa_teste_general_par3.h"
+
 #include "qa_Hamming_Encoder_par.h"
 #include "qa_Hamming_Decoder_par.h"
 #include "qa_BSC_Byte.h"
@@ -40,12 +36,7 @@ CppUnit::TestSuite *
 qa_ITpp::suite()
 {
   CppUnit::TestSuite *s = new CppUnit::TestSuite("ITpp");
-  s->addTest(gr::ITpp::qa_nada::suite());
-  s->addTest(gr::ITpp::qa_Hamming_Encoder::suite());
-  s->addTest(gr::ITpp::qa_teste_general::suite());
 
-  s->addTest(gr::ITpp::qa_teste_general_par2::suite());
-  s->addTest(gr::ITpp::qa_teste_general_par3::suite());
   s->addTest(gr::ITpp::qa_Hamming_Encoder_par::suite());
   s->addTest(gr::ITpp::qa_Hamming_Decoder_par::suite());
   s->addTest(gr::ITpp::qa_BSC_Byte::suite());

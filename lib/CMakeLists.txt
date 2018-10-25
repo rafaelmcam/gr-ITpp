@@ -25,11 +25,6 @@ include(GrPlatform) #define LIB_SUFFIX
 include_directories(${Boost_INCLUDE_DIR})
 link_directories(${Boost_LIBRARY_DIRS})
 list(APPEND ITpp_sources
-    nada_impl.cc
-    Hamming_Encoder_impl.cc
-    teste_general_impl.cc
-    teste_general_par2_impl.cc
-    teste_general_par3_impl.cc
     Hamming_Encoder_par_impl.cc
     Hamming_Decoder_par_impl.cc
     BSC_Byte_impl.cc )
@@ -68,12 +63,7 @@ list(APPEND test_ITpp_sources
     ${CMAKE_CURRENT_SOURCE_DIR}/qa_BSC_Byte.cc
     ${CMAKE_CURRENT_SOURCE_DIR}/qa_Hamming_Decoder_par.cc
     ${CMAKE_CURRENT_SOURCE_DIR}/qa_Hamming_Encoder_par.cc
-    ${CMAKE_CURRENT_SOURCE_DIR}/qa_teste_general_par3.cc
-    ${CMAKE_CURRENT_SOURCE_DIR}/qa_teste_general_par2.cc
-    ${CMAKE_CURRENT_SOURCE_DIR}/qa_teste_general.cc
-    ${CMAKE_CURRENT_SOURCE_DIR}/qa_Hamming_Encoder.cc
-    ${CMAKE_CURRENT_SOURCE_DIR}/qa_nada.cc
-)
+    )
 
 add_executable(test-ITpp ${test_ITpp_sources})
 
