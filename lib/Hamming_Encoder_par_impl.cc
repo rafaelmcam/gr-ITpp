@@ -60,7 +60,7 @@ namespace gr {
 
 
       set_output_multiple(d_N);
-      set_max_noutput_items(d_N);
+  
     }
 
     /*
@@ -88,33 +88,27 @@ namespace gr {
       itpp::bvec uncoded, encoded;
       uncoded.set_length(d_K);
       uncoded.zeros();
-
       itpp::Hamming_Code block(d_m);
 
-      for(int i = 0; i < noutput_items; i++){
-        out[i] = 0;
+      for(int i = 0; i < noutput_items/d_N; i++){
+        
+        for(int j = 0; j < d_N; j++){
+          out[d_N*i+j] = 0;
+        }
+
+        for(int j = 0; j < d_K; j++){
+          uncoded(j) = in[d_K*i+j];
+        }
+        
+        encoded = block.encode(uncoded);
+
+        for(int j = 0; j < d_N; j++){
+          out[d_N*i+j] = (int)encoded.get(j);
+        }
+
       }
 
-      for(int i = 0; i < d_K; i++){
-        uncoded(i) = in[i];
-        //printf("%d ", in[i]);
-      }
-
-      encoded = block.encode(uncoded);
-
-      //d_N = noutput_items
-      for(int i = 0; i < d_N; i++){
-        //out[i] = encoded(d_N-1-i);
-        out[i] = (int)encoded.get(i);
-      }
-
-      //cout << uncoded << "/" <<  noutput_items << endl;
-      //cout << encoded << endl;
-      //printf("\n------------\n");
-
-      consume(0, d_K);
-
-      // Tell runtime system how many output items we produced.
+      consume(0, (int)(noutput_items * ((float)d_K)/((float)d_N)));
       return noutput_items;
     }
 
