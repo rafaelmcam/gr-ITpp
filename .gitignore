@@ -3,4 +3,4 @@
 build/
 MANIFEST.md
 notas.txt
-examples/top_block.py
+**/top_block.py
