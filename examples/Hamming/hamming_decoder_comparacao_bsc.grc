@@ -676,7 +676,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -1388,7 +1388,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -1755,7 +1755,7 @@
     </param>
     <param>
       <key>label0</key>
-      <value>teste com posicionamento na GUI</value>
+      <value>Comparação BER</value>
     </param>
     <param>
       <key>label1</key>
