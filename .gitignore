@@ -4,4 +4,8 @@ build/
 MANIFEST.md
 notas.txt
 **/top_block.py
-/examples/BPSK Ladams
+
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+#/examples/BPSK Ladams
