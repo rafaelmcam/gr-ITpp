@@ -203,7 +203,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>15e-3</value>
+      <value>35e-3</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -385,6 +385,60 @@
     </param>
   </block>
   <block>
+    <key>variable</key>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(904, 20)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>nfilts</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>32</value>
+    </param>
+  </block>
+  <block>
+    <key>variable</key>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(736, 76)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>ntaps</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>15</value>
+    </param>
+  </block>
+  <block>
     <key>variable_constellation_rect</key>
     <param>
       <key>comment</key>
@@ -451,7 +505,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -468,6 +522,33 @@
     <param>
       <key>value</key>
       <value>firdes.root_raised_cosine(32, 32, 1.0/float(2), 0.35, 11*2*32)</value>
+    </param>
+  </block>
+  <block>
+    <key>variable</key>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(816, 76)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>rrc_taps</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>firdes.root_raised_cosine(nfilts, nfilts, 1.0/float(sps), 0.35, ntaps*sps*nfilts)</value>
     </param>
   </block>
   <block>
@@ -495,6 +576,33 @@
     <param>
       <key>value</key>
       <value>250e3</value>
+    </param>
+  </block>
+  <block>
+    <key>variable</key>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(840, 20)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>sps</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>4</value>
     </param>
   </block>
   <block>
@@ -852,7 +960,7 @@
     </param>
     <param>
       <key>taps</key>
-      <value>1</value>
+      <value>1+1j</value>
     </param>
   </block>
   <block>
@@ -903,7 +1011,7 @@
     </param>
     <param>
       <key>num_taps</key>
-      <value>15</value>
+      <value>ntaps</value>
     </param>
     <param>
       <key>sps</key>
@@ -966,7 +1074,7 @@
     </param>
     <param>
       <key>samples_per_symbol</key>
-      <value>4</value>
+      <value>sps</value>
     </param>
     <param>
       <key>verbose</key>
@@ -1084,7 +1192,7 @@
     </param>
     <param>
       <key>sps</key>
-      <value>4</value>
+      <value>sps</value>
     </param>
     <param>
       <key>taps</key>
