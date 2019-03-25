@@ -89,7 +89,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>0</value>
+      <value>8</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -97,7 +97,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(120, 636)</value>
+      <value>(120, 540)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -156,7 +156,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(120, 572)</value>
+      <value>(120, 476)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -183,7 +183,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(24, 692)</value>
+      <value>(24, 596)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -237,7 +237,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(24, 572)</value>
+      <value>(24, 476)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -272,7 +272,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(24, 756)</value>
+      <value>(24, 660)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -306,6 +306,10 @@
       <value></value>
     </param>
     <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
       <key>_enabled</key>
       <value>1</value>
     </param>
@@ -322,20 +326,16 @@
       <value>ITpp_Hamming_Decoder_par_0</value>
     </param>
     <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>m</key>
-      <value>3</value>
-    </param>
-    <param>
       <key>maxoutbuf</key>
       <value>0</value>
     </param>
     <param>
       <key>minoutbuf</key>
       <value>0</value>
+    </param>
+    <param>
+      <key>m</key>
+      <value>3</value>
     </param>
   </block>
   <block>
@@ -346,6 +346,10 @@
     </param>
     <param>
       <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
       <value></value>
     </param>
     <param>
@@ -365,20 +369,16 @@
       <value>ITpp_Hamming_Encoder_par_0</value>
     </param>
     <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>m</key>
-      <value>3</value>
-    </param>
-    <param>
       <key>maxoutbuf</key>
       <value>0</value>
     </param>
     <param>
       <key>minoutbuf</key>
       <value>0</value>
+    </param>
+    <param>
+      <key>m</key>
+      <value>3</value>
     </param>
   </block>
   <block>
@@ -433,7 +433,7 @@
     </param>
     <param>
       <key>seed</key>
-      <value>42</value>
+      <value>84</value>
     </param>
   </block>
   <block>
@@ -456,7 +456,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>0</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -488,7 +488,7 @@
     </param>
     <param>
       <key>seed</key>
-      <value>0</value>
+      <value>84</value>
     </param>
   </block>
   <block>
@@ -570,7 +570,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>0</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -668,7 +668,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>0</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -829,7 +829,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>0</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -947,7 +947,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>0</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -1029,7 +1029,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(24, 636)</value>
+      <value>(24, 540)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1068,7 +1068,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>0</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -1395,7 +1395,7 @@
     <key>qtgui_number_sink</key>
     <param>
       <key>autoscale</key>
-      <value>True</value>
+      <value>False</value>
     </param>
     <param>
       <key>avg</key>
@@ -1415,7 +1415,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>0</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -1423,7 +1423,7 @@
     </param>
     <param>
       <key>gui_hint</key>
-      <value>1,0,1,1</value>
+      <value>1, 0, 1, 1</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1451,7 +1451,7 @@
     </param>
     <param>
       <key>label1</key>
-      <value>BER</value>
+      <value>BER (SEM HAMMING)</value>
     </param>
     <param>
       <key>unit1</key>
@@ -1603,7 +1603,7 @@
     </param>
     <param>
       <key>max</key>
-      <value>1</value>
+      <value>1000</value>
     </param>
     <param>
       <key>min</key>
@@ -1626,7 +1626,7 @@
     <key>qtgui_number_sink</key>
     <param>
       <key>autoscale</key>
-      <value>True</value>
+      <value>False</value>
     </param>
     <param>
       <key>avg</key>
@@ -1654,7 +1654,7 @@
     </param>
     <param>
       <key>gui_hint</key>
-      <value></value>
+      <value>0, 0, 1, 1</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1834,7 +1834,7 @@
     </param>
     <param>
       <key>max</key>
-      <value>1</value>
+      <value>1000</value>
     </param>
     <param>
       <key>min</key>
