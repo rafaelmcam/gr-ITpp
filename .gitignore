@@ -5,6 +5,8 @@ MANIFEST.md
 notas.txt
 **/top_block.py
 
+__pycache__/
+
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
 
