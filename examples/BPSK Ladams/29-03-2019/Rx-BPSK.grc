@@ -90,7 +90,12 @@
 Botar o pack, mas já estava recebendo a informação correta
 no RTL.
 
-Para o RTL, sps = 2.</value>
+Para o RTL, sps = 2. (1 e 1)
+Para o NI210, sps = 4. (2 e 2)
+
+- Fazer sem diff encoding e com chunks per symbol
+- Usar JPG?
+- Ajustar equalizer rate!!</value>
     </param>
     <param>
       <key>const_points</key>
@@ -752,7 +757,7 @@ Para o RTL, sps = 2.</value>
     </param>
     <param>
       <key>_enabled</key>
-      <value>2</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -1055,7 +1060,7 @@ Para o RTL, sps = 2.</value>
     </param>
     <param>
       <key>num_items</key>
-      <value>int(196608 + 122)</value>
+      <value>int(196730)</value>
     </param>
     <param>
       <key>type</key>
@@ -1141,7 +1146,7 @@ Para o RTL, sps = 2.</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(936, 416)</value>
+      <value>(1176, 352)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1162,6 +1167,49 @@ Para o RTL, sps = 2.</value>
     <param>
       <key>vlen</key>
       <value>1</value>
+    </param>
+  </block>
+  <block>
+    <key>blocks_pack_k_bits_bb</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(936, 548)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>blocks_pack_k_bits_bb_0</value>
+    </param>
+    <param>
+      <key>k</key>
+      <value>8</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
     </param>
   </block>
   <block>
@@ -1204,7 +1252,7 @@ Para o RTL, sps = 2.</value>
     </param>
     <param>
       <key>num_items</key>
-      <value>2000000</value>
+      <value>100000</value>
     </param>
     <param>
       <key>type</key>
@@ -2585,7 +2633,7 @@ Para o RTL, sps = 2.</value>
     </param>
     <param>
       <key>gui_hint</key>
-      <value></value>
+      <value>2, 0, 1, 1</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -4980,6 +5028,18 @@ Para o RTL, sps = 2.</value>
     <sink_key>0</sink_key>
   </connection>
   <connection>
+    <source_block_id>analog_agc_xx_0</source_block_id>
+    <sink_block_id>qtgui_const_sink_x_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>analog_agc_xx_0</source_block_id>
+    <sink_block_id>qtgui_freq_sink_x_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
     <source_block_id>analog_random_source_x_0</source_block_id>
     <sink_block_id>blocks_throttle_0</sink_block_id>
     <source_key>0</source_key>
@@ -5005,7 +5065,7 @@ Para o RTL, sps = 2.</value>
   </connection>
   <connection>
     <source_block_id>blocks_delay_1</source_block_id>
-    <sink_block_id>blocks_skiphead_0</sink_block_id>
+    <sink_block_id>blocks_pack_k_bits_bb_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -5030,6 +5090,12 @@ Para o RTL, sps = 2.</value>
   <connection>
     <source_block_id>blocks_multiply_const_vxx_0</source_block_id>
     <sink_block_id>qtgui_const_sink_x_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>blocks_pack_k_bits_bb_0</source_block_id>
+    <sink_block_id>blocks_skiphead_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -5120,18 +5186,6 @@ Para o RTL, sps = 2.</value>
   <connection>
     <source_block_id>rtlsdr_source_0</source_block_id>
     <sink_block_id>analog_agc_xx_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>rtlsdr_source_0</source_block_id>
-    <sink_block_id>qtgui_const_sink_x_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>rtlsdr_source_0</source_block_id>
-    <sink_block_id>qtgui_freq_sink_x_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
