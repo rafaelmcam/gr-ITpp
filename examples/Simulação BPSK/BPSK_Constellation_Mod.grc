@@ -54,7 +54,7 @@
     </param>
     <param>
       <key>qt_qss_theme</key>
-      <value>/usr/share/gnuradio/themes/dark.qss</value>
+      <value>/usr/share/gnuradio/themes/plain.qss</value>
     </param>
     <param>
       <key>realtime_scheduling</key>
@@ -152,7 +152,7 @@
     </param>
     <param>
       <key>gui_hint</key>
-      <value></value>
+      <value>1, 1, 1, 1</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -203,7 +203,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>0</value>
+      <value>0.01</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -211,7 +211,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(120, 84)</value>
+      <value>(120, 148)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -274,7 +274,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(272, 68)</value>
+      <value>(296, 84)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -337,7 +337,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(200, 84)</value>
+      <value>(232, 92)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -627,7 +627,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(584, 624)</value>
+      <value>(840, 840)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -811,7 +811,7 @@
     </param>
     <param>
       <key>epsilon</key>
-      <value>1.0</value>
+      <value>0.999</value>
     </param>
     <param>
       <key>freq_offset</key>
@@ -819,7 +819,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(608, 436)</value>
+      <value>(672, 428)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -866,11 +866,11 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>2</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(968, 396)</value>
+      <value>(512, 644)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -878,7 +878,7 @@
     </param>
     <param>
       <key>mu</key>
-      <value>30e-3</value>
+      <value>0</value>
     </param>
     <param>
       <key>id</key>
@@ -902,7 +902,7 @@
     </param>
     <param>
       <key>sps</key>
-      <value>1</value>
+      <value>2</value>
     </param>
   </block>
   <block>
@@ -929,7 +929,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(344, 620)</value>
+      <value>(328, 836)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1004,7 +1004,7 @@
     </param>
     <param>
       <key>samples_per_symbol</key>
-      <value>2</value>
+      <value>4</value>
     </param>
     <param>
       <key>verbose</key>
@@ -1031,7 +1031,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1136, 424)</value>
+      <value>(712, 672)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1063,7 +1063,7 @@
     </param>
   </block>
   <block>
-    <key>digital_lms_dd_equalizer_cc</key>
+    <key>digital_fll_band_edge_cc</key>
     <param>
       <key>alias</key>
       <value></value>
@@ -1073,32 +1073,32 @@
       <value></value>
     </param>
     <param>
-      <key>cnst</key>
-      <value>bpsk</value>
-    </param>
-    <param>
       <key>affinity</key>
       <value></value>
     </param>
     <param>
       <key>_enabled</key>
-      <value>0</value>
+      <value>True</value>
+    </param>
+    <param>
+      <key>rolloff</key>
+      <value>0.35</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(952, 356)</value>
+      <value>(880, 416)</value>
     </param>
     <param>
       <key>_rotation</key>
       <value>0</value>
     </param>
     <param>
-      <key>mu</key>
-      <value>30e-3</value>
+      <key>id</key>
+      <value>digital_fll_band_edge_cc_0</value>
     </param>
     <param>
-      <key>id</key>
-      <value>digital_lms_dd_equalizer_cc_0</value>
+      <key>w</key>
+      <value>62.8e-3</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -1109,12 +1109,16 @@
       <value>0</value>
     </param>
     <param>
-      <key>num_taps</key>
-      <value>2</value>
+      <key>filter_size</key>
+      <value>45</value>
     </param>
     <param>
-      <key>sps</key>
-      <value>2</value>
+      <key>samps_per_sym</key>
+      <value>4</value>
+    </param>
+    <param>
+      <key>type</key>
+      <value>cc</value>
     </param>
   </block>
   <block>
@@ -1141,7 +1145,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(760, 420)</value>
+      <value>(288, 668)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1173,11 +1177,11 @@
     </param>
     <param>
       <key>osps</key>
-      <value>1</value>
+      <value>2</value>
     </param>
     <param>
       <key>sps</key>
-      <value>2</value>
+      <value>4</value>
     </param>
     <param>
       <key>taps</key>
@@ -1265,11 +1269,11 @@ Diff. Encoding ajuda?</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1072, 660)</value>
+      <value>(1008, 652)</value>
     </param>
     <param>
       <key>gui_hint</key>
-      <value>0, 1, 1, 1</value>
+      <value>0, 0, 1, 1</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1585,38 +1589,22 @@ Diff. Encoding ajuda?</value>
     </param>
   </block>
   <block>
-    <key>qtgui_freq_sink_x</key>
+    <key>qtgui_const_sink_x</key>
     <param>
       <key>autoscale</key>
       <value>False</value>
-    </param>
-    <param>
-      <key>average</key>
-      <value>1.0</value>
     </param>
     <param>
       <key>axislabels</key>
       <value>True</value>
     </param>
     <param>
-      <key>bw</key>
-      <value>samp_rate</value>
-    </param>
-    <param>
       <key>alias</key>
       <value></value>
     </param>
     <param>
-      <key>fc</key>
-      <value>0</value>
-    </param>
-    <param>
       <key>comment</key>
       <value></value>
-    </param>
-    <param>
-      <key>ctrlpanel</key>
-      <value>False</value>
     </param>
     <param>
       <key>affinity</key>
@@ -1627,16 +1615,12 @@ Diff. Encoding ajuda?</value>
       <value>True</value>
     </param>
     <param>
-      <key>fftsize</key>
-      <value>1024</value>
-    </param>
-    <param>
       <key>_coordinate</key>
-      <value>(1088, 572)</value>
+      <value>(880, 348)</value>
     </param>
     <param>
       <key>gui_hint</key>
-      <value>0, 0, 1, 1</value>
+      <value>1, 0, 1, 1</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1648,7 +1632,7 @@ Diff. Encoding ajuda?</value>
     </param>
     <param>
       <key>id</key>
-      <value>qtgui_freq_sink_x_0</value>
+      <value>qtgui_const_sink_x_0_0</value>
     </param>
     <param>
       <key>legend</key>
@@ -1667,6 +1651,14 @@ Diff. Encoding ajuda?</value>
       <value></value>
     </param>
     <param>
+      <key>marker1</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>style1</key>
+      <value>0</value>
+    </param>
+    <param>
       <key>width1</key>
       <value>1</value>
     </param>
@@ -1676,11 +1668,19 @@ Diff. Encoding ajuda?</value>
     </param>
     <param>
       <key>color10</key>
-      <value>"dark blue"</value>
+      <value>"red"</value>
     </param>
     <param>
       <key>label10</key>
       <value></value>
+    </param>
+    <param>
+      <key>marker10</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>style10</key>
+      <value>0</value>
     </param>
     <param>
       <key>width10</key>
@@ -1699,6 +1699,14 @@ Diff. Encoding ajuda?</value>
       <value></value>
     </param>
     <param>
+      <key>marker2</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>style2</key>
+      <value>0</value>
+    </param>
+    <param>
       <key>width2</key>
       <value>1</value>
     </param>
@@ -1708,11 +1716,19 @@ Diff. Encoding ajuda?</value>
     </param>
     <param>
       <key>color3</key>
-      <value>"green"</value>
+      <value>"red"</value>
     </param>
     <param>
       <key>label3</key>
       <value></value>
+    </param>
+    <param>
+      <key>marker3</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>style3</key>
+      <value>0</value>
     </param>
     <param>
       <key>width3</key>
@@ -1724,11 +1740,19 @@ Diff. Encoding ajuda?</value>
     </param>
     <param>
       <key>color4</key>
-      <value>"black"</value>
+      <value>"red"</value>
     </param>
     <param>
       <key>label4</key>
       <value></value>
+    </param>
+    <param>
+      <key>marker4</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>style4</key>
+      <value>0</value>
     </param>
     <param>
       <key>width4</key>
@@ -1740,11 +1764,19 @@ Diff. Encoding ajuda?</value>
     </param>
     <param>
       <key>color5</key>
-      <value>"cyan"</value>
+      <value>"red"</value>
     </param>
     <param>
       <key>label5</key>
       <value></value>
+    </param>
+    <param>
+      <key>marker5</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>style5</key>
+      <value>0</value>
     </param>
     <param>
       <key>width5</key>
@@ -1756,11 +1788,19 @@ Diff. Encoding ajuda?</value>
     </param>
     <param>
       <key>color6</key>
-      <value>"magenta"</value>
+      <value>"red"</value>
     </param>
     <param>
       <key>label6</key>
       <value></value>
+    </param>
+    <param>
+      <key>marker6</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>style6</key>
+      <value>0</value>
     </param>
     <param>
       <key>width6</key>
@@ -1772,11 +1812,19 @@ Diff. Encoding ajuda?</value>
     </param>
     <param>
       <key>color7</key>
-      <value>"yellow"</value>
+      <value>"red"</value>
     </param>
     <param>
       <key>label7</key>
       <value></value>
+    </param>
+    <param>
+      <key>marker7</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>style7</key>
+      <value>0</value>
     </param>
     <param>
       <key>width7</key>
@@ -1788,11 +1836,19 @@ Diff. Encoding ajuda?</value>
     </param>
     <param>
       <key>color8</key>
-      <value>"dark red"</value>
+      <value>"red"</value>
     </param>
     <param>
       <key>label8</key>
       <value></value>
+    </param>
+    <param>
+      <key>marker8</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>style8</key>
+      <value>0</value>
     </param>
     <param>
       <key>width8</key>
@@ -1804,39 +1860,35 @@ Diff. Encoding ajuda?</value>
     </param>
     <param>
       <key>color9</key>
-      <value>"dark green"</value>
+      <value>"red"</value>
     </param>
     <param>
       <key>label9</key>
       <value></value>
     </param>
     <param>
+      <key>marker9</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>style9</key>
+      <value>0</value>
+    </param>
+    <param>
       <key>width9</key>
       <value>1</value>
     </param>
     <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
       <key>name</key>
-      <value>"Frequência"</value>
+      <value>"Constelação Entrada"</value>
     </param>
     <param>
       <key>nconnections</key>
       <value>1</value>
     </param>
     <param>
-      <key>showports</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>freqhalf</key>
-      <value>True</value>
+      <key>size</key>
+      <value>1024</value>
     </param>
     <param>
       <key>tr_chan</key>
@@ -1851,6 +1903,10 @@ Diff. Encoding ajuda?</value>
       <value>qtgui.TRIG_MODE_FREE</value>
     </param>
     <param>
+      <key>tr_slope</key>
+      <value>qtgui.TRIG_SLOPE_POS</value>
+    </param>
+    <param>
       <key>tr_tag</key>
       <value>""</value>
     </param>
@@ -1863,24 +1919,20 @@ Diff. Encoding ajuda?</value>
       <value>0.10</value>
     </param>
     <param>
-      <key>wintype</key>
-      <value>firdes.WIN_BLACKMAN_hARRIS</value>
+      <key>xmax</key>
+      <value>2</value>
     </param>
     <param>
-      <key>label</key>
-      <value>Relative Gain</value>
+      <key>xmin</key>
+      <value>-2</value>
     </param>
     <param>
       <key>ymax</key>
-      <value>10</value>
+      <value>2</value>
     </param>
     <param>
       <key>ymin</key>
-      <value>-140</value>
-    </param>
-    <param>
-      <key>units</key>
-      <value>dB</value>
+      <value>-2</value>
     </param>
   </block>
   <block>
@@ -1919,11 +1971,11 @@ Diff. Encoding ajuda?</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(808, 588)</value>
+      <value>(688, 332)</value>
     </param>
     <param>
       <key>gui_hint</key>
-      <value>1, 0, 1, 2</value>
+      <value>0, 1, 1, 1</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -2306,7 +2358,13 @@ Diff. Encoding ajuda?</value>
   </connection>
   <connection>
     <source_block_id>channels_channel_model_0</source_block_id>
-    <sink_block_id>digital_pfb_clock_sync_xxx_0</sink_block_id>
+    <sink_block_id>digital_fll_band_edge_cc_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>channels_channel_model_0</source_block_id>
+    <sink_block_id>qtgui_const_sink_x_0_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -2341,26 +2399,14 @@ Diff. Encoding ajuda?</value>
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>digital_costas_loop_cc_0</source_block_id>
-    <sink_block_id>qtgui_freq_sink_x_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>digital_lms_dd_equalizer_cc_0</source_block_id>
-    <sink_block_id>digital_costas_loop_cc_0</sink_block_id>
+    <source_block_id>digital_fll_band_edge_cc_0</source_block_id>
+    <sink_block_id>digital_pfb_clock_sync_xxx_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
     <source_block_id>digital_pfb_clock_sync_xxx_0</source_block_id>
     <sink_block_id>digital_cma_equalizer_cc_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>digital_pfb_clock_sync_xxx_0</source_block_id>
-    <sink_block_id>digital_lms_dd_equalizer_cc_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
