@@ -85,7 +85,10 @@
     <key>variable_constellation</key>
     <param>
       <key>comment</key>
-      <value></value>
+      <value>Ver:
+
+- TCP Sink
+- Barker Code.</value>
     </param>
     <param>
       <key>const_points</key>
@@ -1096,7 +1099,7 @@
     </param>
     <param>
       <key>comment</key>
-      <value>Verificar funcionamento de novo depois.</value>
+      <value></value>
     </param>
     <param>
       <key>affinity</key>
