@@ -757,7 +757,7 @@ Para o NI210, sps = 4. (2 e 2)
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>2</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -989,7 +989,7 @@ Para o NI210, sps = 4. (2 e 2)
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>0</value>
     </param>
     <param>
       <key>file</key>
@@ -1036,7 +1036,7 @@ Para o NI210, sps = 4. (2 e 2)
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -1185,7 +1185,7 @@ Para o NI210, sps = 4. (2 e 2)
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -1228,7 +1228,7 @@ Para o NI210, sps = 4. (2 e 2)
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -1876,7 +1876,7 @@ Para o NI210, sps = 4. (2 e 2)
     </param>
     <param>
       <key>sps</key>
-      <value>sps</value>
+      <value>2</value>
     </param>
     <param>
       <key>taps</key>
