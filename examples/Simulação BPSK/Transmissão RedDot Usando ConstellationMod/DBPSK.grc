@@ -368,7 +368,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>0.5</value>
+      <value>0.7</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -421,6 +421,33 @@
     <param>
       <key>widget</key>
       <value>counter_slider</value>
+    </param>
+  </block>
+  <block>
+    <key>variable</key>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(144, 60)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>path</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>"/home/rcampello/Main/FixedPath/OOT Gnuradio/gr-ITpp/examples/Simulação BPSK/Transmissão RedDot Usando ConstellationMod/red_dot.bmp"</value>
     </param>
   </block>
   <block>
@@ -501,7 +528,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>os.path.getsize("/home/rcampello/Main/FixedPath/OOT Gnuradio/Material/GnuRadio/2903/red_dot.bmp")</value>
+      <value>os.path.getsize(path)</value>
     </param>
   </block>
   <block>
@@ -645,61 +672,6 @@
     </param>
   </block>
   <block>
-    <key>blocks_deinterleave</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>blocksize</key>
-      <value>16</value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(824, 496)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>blocks_deinterleave_0</value>
-    </param>
-    <param>
-      <key>type</key>
-      <value>byte</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>num_streams</key>
-      <value>2</value>
-    </param>
-    <param>
-      <key>vlen</key>
-      <value>1</value>
-    </param>
-  </block>
-  <block>
     <key>blocks_delay</key>
     <param>
       <key>alias</key>
@@ -829,7 +801,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>0</value>
+      <value>1</value>
     </param>
     <param>
       <key>file</key>
@@ -837,7 +809,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(584, 596)</value>
+      <value>(640, 628)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -880,7 +852,7 @@
     </param>
     <param>
       <key>file</key>
-      <value>/home/rcampello/Main/FixedPath/OOT Gnuradio/gr-ITpp/examples/Simulação BPSK/Transmissão RedDot Usando ConstellationMod/red_dot.bmp</value>
+      <value>path</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -931,11 +903,11 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>0</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(376, 612)</value>
+      <value>(464, 644)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -955,58 +927,11 @@
     </param>
     <param>
       <key>num_items</key>
-      <value>size_packed_file</value>
+      <value>size_packed_file*2</value>
     </param>
     <param>
       <key>type</key>
       <value>byte</value>
-    </param>
-    <param>
-      <key>vlen</key>
-      <value>1</value>
-    </param>
-  </block>
-  <block>
-    <key>blocks_null_sink</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>bus_conns</key>
-      <value>[[0,],]</value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(936, 528)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>blocks_null_sink_0</value>
-    </param>
-    <param>
-      <key>type</key>
-      <value>byte</value>
-    </param>
-    <param>
-      <key>num_inputs</key>
-      <value>1</value>
     </param>
     <param>
       <key>vlen</key>
@@ -1072,15 +997,15 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>0</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(56, 612)</value>
+      <value>(552, 596)</value>
     </param>
     <param>
       <key>_rotation</key>
-      <value>0</value>
+      <value>180</value>
     </param>
     <param>
       <key>id</key>
@@ -1174,11 +1099,11 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>0</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(192, 612)</value>
+      <value>(280, 644)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1198,7 +1123,7 @@
     </param>
     <param>
       <key>num_items</key>
-      <value>int(size_packed_file * 0.1)</value>
+      <value>int(size_packed_file * 0.5)</value>
     </param>
     <param>
       <key>type</key>
@@ -1229,7 +1154,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(160, 216)</value>
+      <value>(200, 176)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1258,57 +1183,6 @@
     <param>
       <key>type</key>
       <value>byte</value>
-    </param>
-    <param>
-      <key>vlen</key>
-      <value>1</value>
-    </param>
-  </block>
-  <block>
-    <key>blocks_tagged_stream_align</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(608, 508)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>blocks_tagged_stream_align_0</value>
-    </param>
-    <param>
-      <key>type</key>
-      <value>byte</value>
-    </param>
-    <param>
-      <key>lengthtagname</key>
-      <value>my_tag</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
     </param>
     <param>
       <key>vlen</key>
@@ -1390,7 +1264,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(952, 496)</value>
+      <value>(816, 392)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1731,7 +1605,7 @@
     </param>
     <param>
       <key>vector</key>
-      <value>(0, 255)</value>
+      <value>(67, 255)</value>
     </param>
   </block>
   <block>
@@ -2037,57 +1911,6 @@
     </param>
     <param>
       <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-  </block>
-  <block>
-    <key>digital_correlate_access_code_tag_bb</key>
-    <param>
-      <key>access_code</key>
-      <value>0000000011111111</value>
-    </param>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(648, 436)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>180</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>digital_correlate_access_code_tag_bb_0</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>tagname</key>
-      <value>my_tag</value>
-    </param>
-    <param>
-      <key>threshold</key>
       <value>0</value>
     </param>
   </block>
@@ -2670,7 +2493,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1088, 468)</value>
+      <value>(792, 428)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -2678,7 +2501,7 @@
     </param>
     <param>
       <key>_rotation</key>
-      <value>0</value>
+      <value>180</value>
     </param>
     <param>
       <key>grid</key>
@@ -3748,24 +3571,6 @@
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>blocks_deinterleave_0</source_block_id>
-    <sink_block_id>blocks_pack_k_bits_bb_1</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>blocks_deinterleave_0</source_block_id>
-    <sink_block_id>blocks_uchar_to_float_0_0_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>blocks_deinterleave_0</source_block_id>
-    <sink_block_id>blocks_null_sink_0</sink_block_id>
-    <source_key>1</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
     <source_block_id>blocks_delay_0_0</source_block_id>
     <sink_block_id>ITpp_Hamming_Decoder_par_0</sink_block_id>
     <source_key>0</source_key>
@@ -3773,7 +3578,13 @@
   </connection>
   <connection>
     <source_block_id>blocks_delay_0_0_0</source_block_id>
-    <sink_block_id>digital_correlate_access_code_tag_bb_0</sink_block_id>
+    <sink_block_id>blocks_pack_k_bits_bb_1</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>blocks_delay_0_0_0</source_block_id>
+    <sink_block_id>blocks_uchar_to_float_0_0_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -3828,12 +3639,6 @@
   <connection>
     <source_block_id>blocks_stream_mux_0</source_block_id>
     <sink_block_id>blocks_unpack_k_bits_bb_1_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>blocks_tagged_stream_align_0</source_block_id>
-    <sink_block_id>blocks_deinterleave_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -3924,12 +3729,6 @@
   <connection>
     <source_block_id>digital_constellation_soft_decoder_cf_0</source_block_id>
     <sink_block_id>digital_binary_slicer_fb_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>digital_correlate_access_code_tag_bb_0</source_block_id>
-    <sink_block_id>blocks_tagged_stream_align_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
