@@ -11,3 +11,7 @@ __pycache__/
 */.ipynb_checkpoints/*
 
 #/examples/BPSK Ladams
+
+
+
+**/output.data

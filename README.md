@@ -10,4 +10,11 @@ Branch composto de blocos testes/experimentos. Apenas para ver algumas ideias de
 
 Transferência de Imagem SIMULADA - Sem Tratamento de Recepção Extra.      |  
 :-------------------------:|
-![](examples/Scripts&#32;Python/Scripts/BPSK/script_images.png) |  
+![](examples/Scripts&#32;Python/Scripts/BPSK&#32;-&#32;Sem&#32;Correlate/script_images.png) |  
+
+
+
+Transferência de Imagem SIMULADA - Usando Correlate.      |  
+:-------------------------:|
+![](examples/Scripts&#32;Python/Scripts/BPSK&#32;-&#32;Com&#32;Correlate/script_images.png) |  
+
