@@ -3,7 +3,12 @@
 build/
 MANIFEST.md
 notas.txt
+
+
 **/top_block.py
+!examples/Scripts Python/Scripts/*/top_block.py
+
+
 
 __pycache__/
 

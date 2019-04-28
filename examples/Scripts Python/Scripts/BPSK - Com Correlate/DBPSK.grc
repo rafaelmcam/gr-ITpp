@@ -183,7 +183,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>"/home/rcampello/Main/FixedPath/OOT Gnuradio/gr-ITpp/examples/Scripts Python/Scripts/BPSK - Com Correlate/orig_pinguim.bmp"</value>
+      <value>"/home/rcampello/Main/FixedPath/OOT Gnuradio/gr-ITpp/examples/Scripts Python/Scripts/BPSK - Sem Correlate/red_dot.bmp"</value>
     </param>
   </block>
   <block>
@@ -519,6 +519,57 @@
     <param>
       <key>minoutbuf</key>
       <value>0</value>
+    </param>
+  </block>
+  <block>
+    <key>blocks_skiphead</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(240, 508)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>blocks_skiphead_0</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>num_items</key>
+      <value>int(size_packed_file * 0.2)</value>
+    </param>
+    <param>
+      <key>type</key>
+      <value>byte</value>
+    </param>
+    <param>
+      <key>vlen</key>
+      <value>1</value>
     </param>
   </block>
   <block>
@@ -1183,6 +1234,12 @@
   </connection>
   <connection>
     <source_block_id>blocks_pack_k_bits_bb_1</source_block_id>
+    <sink_block_id>blocks_skiphead_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>blocks_skiphead_0</source_block_id>
     <sink_block_id>blocks_head_1_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
