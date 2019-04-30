@@ -368,7 +368,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>0.0</value>
+      <value>0.7</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -691,7 +691,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -746,7 +746,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -1068,7 +1068,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -1123,7 +1123,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -1217,7 +1217,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>2</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -1683,7 +1683,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>2</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -3866,7 +3866,13 @@
   </block>
   <connection>
     <source_block_id>ITpp_Hamming_Decoder_par_0</source_block_id>
-    <sink_block_id>blocks_delay_0_0_0</sink_block_id>
+    <sink_block_id>blocks_pack_k_bits_bb_1</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>ITpp_Hamming_Decoder_par_0</source_block_id>
+    <sink_block_id>blocks_uchar_to_float_0_0_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -3913,6 +3919,12 @@
     <sink_key>0</sink_key>
   </connection>
   <connection>
+    <source_block_id>blocks_delay_0_0_0</source_block_id>
+    <sink_block_id>blocks_delay_0_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
     <source_block_id>blocks_file_source_0</source_block_id>
     <sink_block_id>blocks_throttle_0</sink_block_id>
     <source_key>0</source_key>
@@ -3932,13 +3944,7 @@
   </connection>
   <connection>
     <source_block_id>blocks_interleave_1_0</source_block_id>
-    <sink_block_id>blocks_pack_k_bits_bb_1</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>blocks_interleave_1_0</source_block_id>
-    <sink_block_id>blocks_uchar_to_float_0_0_0</sink_block_id>
+    <sink_block_id>blocks_delay_0_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -3950,7 +3956,7 @@
   </connection>
   <connection>
     <source_block_id>blocks_pack_k_bits_bb_0_0</source_block_id>
-    <sink_block_id>blocks_unpack_k_bits_bb_0</sink_block_id>
+    <sink_block_id>digital_constellation_modulator_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -3962,7 +3968,7 @@
   </connection>
   <connection>
     <source_block_id>blocks_repack_bits_bb_0</source_block_id>
-    <sink_block_id>digital_constellation_modulator_0</sink_block_id>
+    <sink_block_id>blocks_unpack_k_bits_bb_0_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -3974,7 +3980,7 @@
   </connection>
   <connection>
     <source_block_id>blocks_stream_mux_0</source_block_id>
-    <sink_block_id>blocks_unpack_k_bits_bb_0_0</sink_block_id>
+    <sink_block_id>blocks_unpack_k_bits_bb_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -4017,6 +4023,12 @@
   <connection>
     <source_block_id>blocks_unpack_k_bits_bb_0_0</source_block_id>
     <sink_block_id>blocks_deinterleave_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>blocks_unpack_k_bits_bb_0_0</source_block_id>
+    <sink_block_id>blocks_pack_k_bits_bb_0_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -4100,7 +4112,7 @@
   </connection>
   <connection>
     <source_block_id>digital_diff_decoder_bb_0</source_block_id>
-    <sink_block_id>blocks_delay_0_0</sink_block_id>
+    <sink_block_id>blocks_delay_0_0_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
