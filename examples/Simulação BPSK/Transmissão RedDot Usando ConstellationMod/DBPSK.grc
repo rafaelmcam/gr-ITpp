@@ -368,7 +368,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>0.7</value>
+      <value>0.0</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -605,7 +605,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(504, 388)</value>
+      <value>(544, 388)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -648,7 +648,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(376, 132)</value>
+      <value>(392, 116)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -679,7 +679,7 @@
     </param>
     <param>
       <key>blocksize</key>
-      <value>8</value>
+      <value>32</value>
     </param>
     <param>
       <key>comment</key>
@@ -695,7 +695,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(464, 160)</value>
+      <value>(472, 152)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -750,7 +750,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(464, 320)</value>
+      <value>(552, 320)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -805,7 +805,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(416, 388)</value>
+      <value>(448, 388)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -860,7 +860,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(704, 388)</value>
+      <value>(440, 332)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1072,7 +1072,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(608, 160)</value>
+      <value>(616, 152)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1111,7 +1111,7 @@
     </param>
     <param>
       <key>blocksize</key>
-      <value>8</value>
+      <value>32</value>
     </param>
     <param>
       <key>comment</key>
@@ -1127,7 +1127,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(656, 320)</value>
+      <value>(688, 320)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1178,7 +1178,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(568, 132)</value>
+      <value>(576, 116)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1221,7 +1221,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(744, 172)</value>
+      <value>(744, 164)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1319,7 +1319,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(688, 124)</value>
+      <value>(696, 108)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1417,7 +1417,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(184, 168)</value>
+      <value>(176, 152)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1644,7 +1644,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(232, 132)</value>
+      <value>(320, 116)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1687,7 +1687,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(328, 180)</value>
+      <value>(336, 164)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -3950,7 +3950,7 @@
   </connection>
   <connection>
     <source_block_id>blocks_pack_k_bits_bb_0_0</source_block_id>
-    <sink_block_id>digital_constellation_modulator_0</sink_block_id>
+    <sink_block_id>blocks_unpack_k_bits_bb_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -3961,14 +3961,14 @@
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>blocks_skiphead_0</source_block_id>
-    <sink_block_id>blocks_head_1</sink_block_id>
+    <source_block_id>blocks_repack_bits_bb_0</source_block_id>
+    <sink_block_id>digital_constellation_modulator_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>blocks_stream_mux_0</source_block_id>
-    <sink_block_id>blocks_unpack_k_bits_bb_0</sink_block_id>
+    <source_block_id>blocks_skiphead_0</source_block_id>
+    <sink_block_id>blocks_head_1</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
