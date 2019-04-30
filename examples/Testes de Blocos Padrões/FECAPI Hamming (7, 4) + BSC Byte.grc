@@ -140,7 +140,7 @@
     </param>
     <param>
       <key>filename</key>
-      <value>/home/rcampello/Main/FixedPath/OOT Gnuradio/gr-ITpp/examples/Testes de Blocos Padrões/hamming_G.alist</value>
+      <value>/home/rcampello/Main/FixedPath/OOT Gnuradio/gr-ITpp/examples/hamming74_G.alist</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -153,6 +153,41 @@
     <param>
       <key>id</key>
       <value>G</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>"ok"</value>
+    </param>
+  </block>
+  <block>
+    <key>variable_ldpc_H_matrix_def</key>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>filename</key>
+      <value>/home/rcampello/Main/FixedPath/OOT Gnuradio/gr-ITpp/examples/hamming74_H.alist</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(280, 692)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>gap</key>
+      <value>7</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>H</value>
     </param>
     <param>
       <key>value</key>
@@ -227,6 +262,49 @@
     <param>
       <key>ndim</key>
       <value>0</value>
+    </param>
+  </block>
+  <block>
+    <key>variable_ldpc_encoder_H_def</key>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>dim1</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>dim2</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(272, 620)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>variable_ldpc_encoder_H_def_0</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>"ok"</value>
+    </param>
+    <param>
+      <key>ndim</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>H</key>
+      <value>H</value>
     </param>
   </block>
   <block>
@@ -903,7 +981,7 @@
     </param>
     <param>
       <key>encoder</key>
-      <value>variable_ldpc_encoder_G_def_0</value>
+      <value>variable_ldpc_encoder_H_def_0</value>
     </param>
     <param>
       <key>affinity</key>
@@ -1025,7 +1103,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>0.0786</value>
+      <value>0.0</value>
     </param>
   </block>
   <block>
@@ -1526,7 +1604,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(904, 292)</value>
+      <value>(904, 284)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -1790,7 +1868,7 @@
     </param>
     <param>
       <key>name</key>
-      <value>""</value>
+      <value>"Final"</value>
     </param>
     <param>
       <key>nconnections</key>
