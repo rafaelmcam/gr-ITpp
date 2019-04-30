@@ -203,7 +203,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>8</value>
+      <value>6</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -672,6 +672,116 @@
     </param>
   </block>
   <block>
+    <key>blocks_deinterleave</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>blocksize</key>
+      <value>8</value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(464, 160)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>blocks_deinterleave_0</value>
+    </param>
+    <param>
+      <key>type</key>
+      <value>byte</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>num_streams</key>
+      <value>2</value>
+    </param>
+    <param>
+      <key>vlen</key>
+      <value>1</value>
+    </param>
+  </block>
+  <block>
+    <key>blocks_deinterleave</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>blocksize</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(464, 320)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>blocks_deinterleave_0_0</value>
+    </param>
+    <param>
+      <key>type</key>
+      <value>byte</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>num_streams</key>
+      <value>2</value>
+    </param>
+    <param>
+      <key>vlen</key>
+      <value>1</value>
+    </param>
+  </block>
+  <block>
     <key>blocks_delay</key>
     <param>
       <key>alias</key>
@@ -746,7 +856,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>2</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -939,6 +1049,116 @@
     </param>
   </block>
   <block>
+    <key>blocks_interleave</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>blocksize</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(608, 160)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>blocks_interleave_1</value>
+    </param>
+    <param>
+      <key>type</key>
+      <value>byte</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>num_streams</key>
+      <value>2</value>
+    </param>
+    <param>
+      <key>vlen</key>
+      <value>1</value>
+    </param>
+  </block>
+  <block>
+    <key>blocks_interleave</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>blocksize</key>
+      <value>8</value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(656, 320)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>blocks_interleave_1_0</value>
+    </param>
+    <param>
+      <key>type</key>
+      <value>byte</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>num_streams</key>
+      <value>2</value>
+    </param>
+    <param>
+      <key>vlen</key>
+      <value>1</value>
+    </param>
+  </block>
+  <block>
     <key>blocks_pack_k_bits_bb</key>
     <param>
       <key>alias</key>
@@ -971,6 +1191,49 @@
     <param>
       <key>k</key>
       <value>7</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+  </block>
+  <block>
+    <key>blocks_pack_k_bits_bb</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(744, 172)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>blocks_pack_k_bits_bb_0_0</value>
+    </param>
+    <param>
+      <key>k</key>
+      <value>8</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -1154,7 +1417,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(200, 176)</value>
+      <value>(184, 168)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1264,7 +1527,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(816, 392)</value>
+      <value>(808, 336)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1390,6 +1653,49 @@
     <param>
       <key>id</key>
       <value>blocks_unpack_k_bits_bb_0</value>
+    </param>
+    <param>
+      <key>k</key>
+      <value>8</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+  </block>
+  <block>
+    <key>blocks_unpack_k_bits_bb</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(328, 180)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>blocks_unpack_k_bits_bb_0_0</value>
     </param>
     <param>
       <key>k</key>
@@ -1546,7 +1852,7 @@
     </param>
     <param>
       <key>vector</key>
-      <value>(67, 255)</value>
+      <value>(0, 255)</value>
     </param>
   </block>
   <block>
@@ -2032,7 +2338,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(704, 196)</value>
+      <value>(696, 196)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -3571,6 +3877,30 @@
     <sink_key>0</sink_key>
   </connection>
   <connection>
+    <source_block_id>blocks_deinterleave_0</source_block_id>
+    <sink_block_id>blocks_interleave_1</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>blocks_deinterleave_0</source_block_id>
+    <sink_block_id>blocks_interleave_1</sink_block_id>
+    <source_key>1</source_key>
+    <sink_key>1</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>blocks_deinterleave_0_0</source_block_id>
+    <sink_block_id>blocks_interleave_1_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>blocks_deinterleave_0_0</source_block_id>
+    <sink_block_id>blocks_interleave_1_0</sink_block_id>
+    <source_key>1</source_key>
+    <sink_key>1</sink_key>
+  </connection>
+  <connection>
     <source_block_id>blocks_delay_0_0</source_block_id>
     <sink_block_id>ITpp_Hamming_Decoder_par_0</sink_block_id>
     <source_key>0</source_key>
@@ -3578,13 +3908,7 @@
   </connection>
   <connection>
     <source_block_id>blocks_delay_0_0_0</source_block_id>
-    <sink_block_id>blocks_pack_k_bits_bb_1</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>blocks_delay_0_0_0</source_block_id>
-    <sink_block_id>blocks_uchar_to_float_0_0_0</sink_block_id>
+    <sink_block_id>blocks_deinterleave_0_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -3601,26 +3925,38 @@
     <sink_key>0</sink_key>
   </connection>
   <connection>
+    <source_block_id>blocks_interleave_1</source_block_id>
+    <sink_block_id>blocks_pack_k_bits_bb_0_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>blocks_interleave_1_0</source_block_id>
+    <sink_block_id>blocks_pack_k_bits_bb_1</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>blocks_interleave_1_0</source_block_id>
+    <sink_block_id>blocks_uchar_to_float_0_0_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
     <source_block_id>blocks_pack_k_bits_bb_0</source_block_id>
     <sink_block_id>blocks_repack_bits_bb_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
+    <source_block_id>blocks_pack_k_bits_bb_0_0</source_block_id>
+    <sink_block_id>digital_constellation_modulator_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
     <source_block_id>blocks_pack_k_bits_bb_1</source_block_id>
     <sink_block_id>blocks_skiphead_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>blocks_repack_bits_bb_0</source_block_id>
-    <sink_block_id>blocks_unpack_k_bits_bb_1</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>blocks_repack_bits_bb_0</source_block_id>
-    <sink_block_id>digital_constellation_modulator_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -3633,6 +3969,12 @@
   <connection>
     <source_block_id>blocks_stream_mux_0</source_block_id>
     <sink_block_id>blocks_unpack_k_bits_bb_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>blocks_stream_mux_0</source_block_id>
+    <sink_block_id>blocks_unpack_k_bits_bb_0_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -3669,6 +4011,12 @@
   <connection>
     <source_block_id>blocks_unpack_k_bits_bb_0</source_block_id>
     <sink_block_id>ITpp_Hamming_Encoder_par_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>blocks_unpack_k_bits_bb_0_0</source_block_id>
+    <sink_block_id>blocks_deinterleave_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
