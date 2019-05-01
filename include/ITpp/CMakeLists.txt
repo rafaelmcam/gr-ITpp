@@ -24,5 +24,7 @@ install(FILES
     api.h
     Hamming_Encoder_par.h
     Hamming_Decoder_par.h
-    BSC_Byte.h DESTINATION include/ITpp
+    BSC_Byte.h
+    BCH_Encoder.h
+    BCH_Decoder.h DESTINATION include/ITpp
 )

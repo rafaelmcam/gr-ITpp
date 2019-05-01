@@ -27,7 +27,9 @@ link_directories(${Boost_LIBRARY_DIRS})
 list(APPEND ITpp_sources
     Hamming_Encoder_par_impl.cc
     Hamming_Decoder_par_impl.cc
-    BSC_Byte_impl.cc )
+    BSC_Byte_impl.cc
+    BCH_Encoder_impl.cc
+    BCH_Decoder_impl.cc )
 
 set(ITpp_sources "${ITpp_sources}" PARENT_SCOPE)
 if(NOT ITpp_sources)
