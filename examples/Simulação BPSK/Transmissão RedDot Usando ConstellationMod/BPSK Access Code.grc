@@ -334,7 +334,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>0.0</value>
+      <value>0.7</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -619,7 +619,7 @@
     </param>
     <param>
       <key>file</key>
-      <value>/home/rcampello/Main/FixedPath/OOT Gnuradio/gr-ITpp/examples/Simulação BPSK/Transmissão RedDot Usando ConstellationMod/output.data</value>
+      <value>/home/rcampello/Main/FixedPath/OOT Gnuradio/gr-ITpp/examples/Simulação BPSK/Transmissão RedDot Usando ConstellationMod/outputAccess.data</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -662,7 +662,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>0</value>
+      <value>1</value>
     </param>
     <param>
       <key>file</key>
@@ -1070,7 +1070,7 @@
     </param>
     <param>
       <key>lengths</key>
-      <value>64, 64, 16</value>
+      <value>64, 64, 64</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -1137,7 +1137,7 @@
     </param>
     <param>
       <key>packet_len</key>
-      <value>8*2</value>
+      <value>8*8</value>
     </param>
     <param>
       <key>type</key>
@@ -1520,7 +1520,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -2342,6 +2342,37 @@
     <param>
       <key>import</key>
       <value>import numpy</value>
+    </param>
+  </block>
+  <block>
+    <key>note</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(56, 796)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>note_0</value>
+    </param>
+    <param>
+      <key>note</key>
+      <value>Packet melhor com mux e delay?</value>
     </param>
   </block>
   <block>
@@ -3366,7 +3397,7 @@
     </param>
     <param>
       <key>size</key>
-      <value>64 + 64 + 16</value>
+      <value>64 + 64 + 64</value>
     </param>
     <param>
       <key>srate</key>
@@ -3504,6 +3535,33 @@
     <param>
       <key>stream_id</key>
       <value>Pós Costas Loop</value>
+    </param>
+  </block>
+  <block>
+    <key>virtual_sink</key>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(512, 892)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>virtual_sink_3</value>
+    </param>
+    <param>
+      <key>stream_id</key>
+      <value>Final Byte</value>
     </param>
   </block>
   <block>
@@ -3884,6 +3942,12 @@
   <connection>
     <source_block_id>digital_header_payload_demux_0</source_block_id>
     <sink_block_id>blocks_uchar_to_float_0_0_0</sink_block_id>
+    <source_key>1</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>digital_header_payload_demux_0</source_block_id>
+    <sink_block_id>virtual_sink_3</sink_block_id>
     <source_key>1</source_key>
     <sink_key>0</sink_key>
   </connection>
