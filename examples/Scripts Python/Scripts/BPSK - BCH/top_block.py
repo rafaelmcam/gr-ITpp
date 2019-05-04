@@ -23,13 +23,13 @@ import argparse
 
 class top_block(gr.top_block):
 
-    def __init__(self, noise, delay):
+    def __init__(self, noise, delay, input_path, output_path):
         gr.top_block.__init__(self, "Top Block")
 
         ##################################################
         # Variables
         ##################################################
-        self.path = path = "/home/rcampello/Main/FixedPath/OOT Gnuradio/gr-ITpp/examples/Simulação BPSK/Transmissão RedDot Usando ConstellationMod/red_dot.bmp"
+        self.path = path = input_path
         self.taps = taps = [1]
         self.size_packed_file = size_packed_file = os.path.getsize(path)
         self.samp_rate = samp_rate = 32000 * 20
@@ -75,7 +75,7 @@ class top_block(gr.top_block):
         self.blocks_pack_k_bits_bb_1 = blocks.pack_k_bits_bb(8)
         self.blocks_head_1 = blocks.head(gr.sizeof_char*1, size_packed_file*2)
         self.blocks_file_source_0 = blocks.file_source(gr.sizeof_char*1, path, True)
-        self.blocks_file_sink_0 = blocks.file_sink(gr.sizeof_char*1, '/home/rcampello/Main/FixedPath/OOT Gnuradio/gr-ITpp/examples/Scripts Python/Scripts/BPSK - BCH/output.data', False)
+        self.blocks_file_sink_0 = blocks.file_sink(gr.sizeof_char*1, output_path, False)
         self.blocks_file_sink_0.set_unbuffered(False)
         self.blocks_delay_0_0_0 = blocks.delay(gr.sizeof_char*1, int(delay))
         self.ITpp_BCH_Encoder_0 = ITpp.BCH_Encoder(15, 2)
@@ -172,11 +172,13 @@ def main(top_block_cls=top_block, options=None):
     parser = argparse.ArgumentParser(description='Specify Channel Noise and Delay for Decoding.')
     parser.add_argument('--noise', type = float, default = 0.0, help='Channel Noise')
     parser.add_argument('--delay', type = int, default = 0, help='Decoding Delay')
+    parser.add_argument('--input_path', type = str, help='Input Path')
+    parser.add_argument('--output_path', type = str, help='Output Path')
 
     args = parser.parse_args() 
     
     
-    tb = top_block_cls(args.noise, args.delay)
+    tb = top_block_cls(args.noise, args.delay, args.input_path, args.output_path)
     tb.start()
     try:
         raw_input('Press Enter to quit: ')
