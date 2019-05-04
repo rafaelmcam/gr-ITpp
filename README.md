@@ -7,9 +7,15 @@ Branch principal de blocos testes/experimentos/resultados.
 
 ## Curva de BER para BPSK - Hamming
 
-![Overview](/examples/Scripts%20Python/BerCurve_Hamming.png)
+![Overview](/examples/Scripts%20Python/Curvas%20BER/BerCurve_Hamming_BPSK.png)
 
+## Curva de BER para BPSK - BCH(15, 7, 2)
 
+![Overview](/examples/Scripts%20Python/Curvas%20BER/BerCurve_BPSK_BCH_15_7_2.png)
+
+## Curva de BER para BPSK - BCH(63, 30, 6)
+
+![Overview](/examples/Scripts%20Python/Curvas%20BER/BerCurve_BPSK_BCH_63_30_6.png)
 
 
 Transferência de Imagem SIMULADA - Sem Tratamento de Recepção Extra.      |  
