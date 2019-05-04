@@ -42,7 +42,9 @@ from gnuradio import blocks
 import sys
 from ITpp import Hamming_Encoder_par, Hamming_Decoder_par
 
+
 try:
+    from scipy.special import comb
     from scipy.special import erfc
 except ImportError:
     print "Error: could not import scipy (http://www.scipy.org/)"
@@ -55,12 +57,37 @@ except ImportError:
     sys.exit(1)
 
 # Best to choose powers of 10
+#N_BITS = 1e7
 N_BITS = 1e7
 RAND_SEED = 42
 
-def berawgn(EbN0):
+
+def Q(x):
+    return (0.5 * erfc(x/(numpy.sqrt(2))))
+
+def Pb_BPSK(EbN0):
+    return Q(numpy.sqrt(2*EbN0))
+
+def Pb_DBPSK(EbN0):
+    return 2 * Q(numpy.sqrt(2*EbN0)) - 2 * Q(numpy.sqrt(2*EbN0))**2
+
+def from_dB(x):
+    return math.pow(10, x/10)
+
+def Pb_Hard_Codes(p, N, t):
+    Sum = 0
+    for m in range(t+1, N + 1):
+        x = (m + t) * comb(N, m, exact = True, repetition = False) * p ** (m) * (1 - p) ** (N - m)
+        Sum += x
+    return Sum/N
+
+def berawgn_BPSK(EbN0):
     """ Calculates theoretical bit error rate in AWGN (for BPSK and given Eb/N0) """
-    return 0.5 * erfc(math.sqrt(10**(float(EbN0)/10)))
+    return Pb_BPSK(from_dB(EbN0))
+
+def berawgn_DBPSK(EbN0):
+    """ Calculates theoretical bit error rate in AWGN (for DBPSK and given Eb/N0) """
+    return Pb_DBPSK(from_dB(EbN0))
 
 class BitErrors(gr.hier_block2):
     """ Two inputs: true and received bits. We compare them and
@@ -180,17 +207,21 @@ if __name__ == "__main__":
     EbN0_max = 10
     EbN0_range = range(EbN0_min, EbN0_max+1)
     #EbN0_range = [0.5*x for x in range(EbN0_min*2, (EbN0_max+1)*2)]
-    ber_theory = [berawgn(x)      for x in EbN0_range]
+    ber_theory = [berawgn_BPSK(float(x))      for x in EbN0_range]
+    ber_theory2 = [Pb_Hard_Codes(Pb_BPSK(from_dB(float(x) - 10 * math.log10(float(7)/float(4)))), 7, 1)  for x in EbN0_range]
+    print(ber_theory)
+    print(ber_theory2)
     print "Simulating..."
     ber_simu   = [simulate_ber(x) for x in EbN0_range]
     ber_simu2  = [simulate_ber2(x) for x in EbN0_range]
 
     f = pylab.figure()
     s = f.add_subplot(1,1,1)
-    s.semilogy(EbN0_range, ber_theory, 'g-.', label="Theoretical")
-    s.semilogy(EbN0_range, ber_simu, 'b-o', label="Simulated")
-    s.semilogy(EbN0_range, ber_simu2, 'r-o', label="Simulated - Hamming")
-    s.set_title('BER Simulation')
+    s.semilogy(EbN0_range, ber_theory, 'g-.', label="Theoretical BPSK")
+    s.semilogy(EbN0_range, ber_theory2, 'y-.', label="Theoretical BPSK + Hamming")
+    s.semilogy(EbN0_range, ber_simu, 'b-o', label="Simulated BPSK")
+    s.semilogy(EbN0_range, ber_simu2, 'r-o', label="Simulated BPSK - Hamming")
+    s.set_title('BER Simulation - BPSK')
     s.set_xlabel('Eb/N0 (dB)')
     s.set_ylabel('BER')
     s.legend()

@@ -89,7 +89,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>0</value>
+      <value>7</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -315,7 +315,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(816, 308)</value>
+      <value>(880, 308)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -335,11 +335,11 @@
     </param>
     <param>
       <key>n</key>
-      <value>15</value>
+      <value>63</value>
     </param>
     <param>
       <key>t</key>
-      <value>2</value>
+      <value>6</value>
     </param>
   </block>
   <block>
@@ -362,7 +362,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(112, 292)</value>
+      <value>(184, 228)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -382,18 +382,18 @@
     </param>
     <param>
       <key>n</key>
-      <value>15</value>
+      <value>63</value>
     </param>
     <param>
       <key>t</key>
-      <value>2</value>
+      <value>6</value>
     </param>
   </block>
   <block>
     <key>analog_noise_source_x</key>
     <param>
       <key>amp</key>
-      <value>1.0 / math.sqrt(const[const_type].bits_per_symbol() * 10**(float(EbN0-10*math.log10(15/7))/10))</value>
+      <value>1.0 / math.sqrt(const[const_type].bits_per_symbol() * 10**(float(EbN0-10*math.log10(63/30))/10))</value>
     </param>
     <param>
       <key>alias</key>
@@ -401,7 +401,8 @@
     </param>
     <param>
       <key>comment</key>
-      <value>Subtrair -3.31 (-10log10(15/7)) se for usando o código.</value>
+      <value>Subtrair -3.31 (-10log10(15/7)) se for usando o código.
+Ou (-10log10(63/30)) para (BCH(63, 30, 6))</value>
     </param>
     <param>
       <key>affinity</key>
@@ -1019,6 +1020,178 @@
     <param>
       <key>minoutbuf</key>
       <value>0</value>
+    </param>
+  </block>
+  <block>
+    <key>digital_diff_decoder_bb</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>2</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(760, 252)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>digital_diff_decoder_bb_0</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>modulus</key>
+      <value>2</value>
+    </param>
+  </block>
+  <block>
+    <key>digital_diff_decoder_bb</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>2</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(888, 108)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>digital_diff_decoder_bb_0_0</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>modulus</key>
+      <value>2</value>
+    </param>
+  </block>
+  <block>
+    <key>digital_diff_encoder_bb</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>2</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(72, 292)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>digital_diff_encoder_bb_0</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>modulus</key>
+      <value>2</value>
+    </param>
+  </block>
+  <block>
+    <key>digital_diff_encoder_bb</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>2</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(176, 60)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>digital_diff_encoder_bb_0_0</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>modulus</key>
+      <value>2</value>
     </param>
   </block>
   <block>
@@ -1900,7 +2073,7 @@
   </connection>
   <connection>
     <source_block_id>ITpp_BCH_Encoder_0</source_block_id>
-    <sink_block_id>digital_chunks_to_symbols_xx_0</sink_block_id>
+    <sink_block_id>digital_diff_encoder_bb_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -1972,7 +2145,7 @@
   </connection>
   <connection>
     <source_block_id>blocks_throttle</source_block_id>
-    <sink_block_id>digital_chunks_to_symbols_xx</sink_block_id>
+    <sink_block_id>digital_diff_encoder_bb_0_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -1990,13 +2163,37 @@
   </connection>
   <connection>
     <source_block_id>digital_constellation_decoder_cb_0</source_block_id>
-    <sink_block_id>blks2_error_rate</sink_block_id>
+    <sink_block_id>digital_diff_decoder_bb_0_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
     <source_block_id>digital_constellation_decoder_cb_0_0</source_block_id>
+    <sink_block_id>digital_diff_decoder_bb_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>digital_diff_decoder_bb_0</source_block_id>
     <sink_block_id>ITpp_BCH_Decoder_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>digital_diff_decoder_bb_0_0</source_block_id>
+    <sink_block_id>blks2_error_rate</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>digital_diff_encoder_bb_0</source_block_id>
+    <sink_block_id>digital_chunks_to_symbols_xx_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>digital_diff_encoder_bb_0_0</source_block_id>
+    <sink_block_id>digital_chunks_to_symbols_xx</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
