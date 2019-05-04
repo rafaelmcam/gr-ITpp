@@ -296,7 +296,7 @@
     </param>
   </block>
   <block>
-    <key>ITpp_Hamming_Decoder_par</key>
+    <key>ITpp_BCH_Decoder</key>
     <param>
       <key>alias</key>
       <value></value>
@@ -323,7 +323,7 @@
     </param>
     <param>
       <key>id</key>
-      <value>ITpp_Hamming_Decoder_par_0</value>
+      <value>ITpp_BCH_Decoder_0</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -334,12 +334,16 @@
       <value>0</value>
     </param>
     <param>
-      <key>m</key>
-      <value>3</value>
+      <key>n</key>
+      <value>15</value>
+    </param>
+    <param>
+      <key>t</key>
+      <value>2</value>
     </param>
   </block>
   <block>
-    <key>ITpp_Hamming_Encoder_par</key>
+    <key>ITpp_BCH_Encoder</key>
     <param>
       <key>alias</key>
       <value></value>
@@ -358,7 +362,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(64, 292)</value>
+      <value>(112, 292)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -366,7 +370,7 @@
     </param>
     <param>
       <key>id</key>
-      <value>ITpp_Hamming_Encoder_par_0</value>
+      <value>ITpp_BCH_Encoder_0</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -377,15 +381,19 @@
       <value>0</value>
     </param>
     <param>
-      <key>m</key>
-      <value>3</value>
+      <key>n</key>
+      <value>15</value>
+    </param>
+    <param>
+      <key>t</key>
+      <value>2</value>
     </param>
   </block>
   <block>
     <key>analog_noise_source_x</key>
     <param>
       <key>amp</key>
-      <value>1.0 / math.sqrt(const[const_type].bits_per_symbol() * 10**(float(EbN0-2.43)/10))</value>
+      <value>1.0 / math.sqrt(const[const_type].bits_per_symbol() * 10**(float(EbN0-10*math.log10(15/7))/10))</value>
     </param>
     <param>
       <key>alias</key>
@@ -393,7 +401,7 @@
     </param>
     <param>
       <key>comment</key>
-      <value>Subtrair -2.43 (-10log(7/4)) se for usando o código.</value>
+      <value>Subtrair -3.31 (-10log10(15/7)) se for usando o código.</value>
     </param>
     <param>
       <key>affinity</key>
@@ -405,7 +413,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(288, 340)</value>
+      <value>(264, 340)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -892,7 +900,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(288, 284)</value>
+      <value>(264, 284)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1038,6 +1046,37 @@
     <param>
       <key>id</key>
       <value>import</value>
+    </param>
+    <param>
+      <key>import</key>
+      <value>import math</value>
+    </param>
+  </block>
+  <block>
+    <key>import</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(272, 20)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>import_0</value>
     </param>
     <param>
       <key>import</key>
@@ -1419,7 +1458,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(784, 164)</value>
+      <value>(808, 164)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -1451,7 +1490,7 @@
     </param>
     <param>
       <key>label1</key>
-      <value>BER (SEM HAMMING)</value>
+      <value>BER (SEM BCH (15, 7, 2))</value>
     </param>
     <param>
       <key>unit1</key>
@@ -1650,7 +1689,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(776, 388)</value>
+      <value>(784, 388)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -1682,7 +1721,7 @@
     </param>
     <param>
       <key>label1</key>
-      <value>BER (Com Hamming)</value>
+      <value>BER (Com BCH (15, 7, 2))</value>
     </param>
     <param>
       <key>unit1</key>
@@ -1854,13 +1893,13 @@
     </param>
   </block>
   <connection>
-    <source_block_id>ITpp_Hamming_Decoder_par_0</source_block_id>
+    <source_block_id>ITpp_BCH_Decoder_0</source_block_id>
     <sink_block_id>blks2_error_rate_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>ITpp_Hamming_Encoder_par_0</source_block_id>
+    <source_block_id>ITpp_BCH_Encoder_0</source_block_id>
     <sink_block_id>digital_chunks_to_symbols_xx_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
@@ -1915,7 +1954,7 @@
   </connection>
   <connection>
     <source_block_id>blocks_throttle</source_block_id>
-    <sink_block_id>ITpp_Hamming_Encoder_par_0</sink_block_id>
+    <sink_block_id>ITpp_BCH_Encoder_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -1957,7 +1996,7 @@
   </connection>
   <connection>
     <source_block_id>digital_constellation_decoder_cb_0_0</source_block_id>
-    <sink_block_id>ITpp_Hamming_Decoder_par_0</sink_block_id>
+    <sink_block_id>ITpp_BCH_Decoder_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
