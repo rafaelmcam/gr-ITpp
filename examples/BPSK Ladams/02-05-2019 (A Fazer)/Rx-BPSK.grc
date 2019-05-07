@@ -670,49 +670,6 @@ Para o NI210, sps = 4. (2 e 2)
     </param>
   </block>
   <block>
-    <key>ITpp_Hamming_Decoder_par</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>2</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(792, 452)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>ITpp_Hamming_Decoder_par_0</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>m</key>
-      <value>3</value>
-    </param>
-  </block>
-  <block>
     <key>analog_agc_xx</key>
     <param>
       <key>alias</key>
@@ -844,7 +801,7 @@ costellation Plot.</value>
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>2</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -970,7 +927,7 @@ costellation Plot.</value>
     </param>
     <param>
       <key>num_items</key>
-      <value>size_packed_file</value>
+      <value>int(size_packed_file * 2)</value>
     </param>
     <param>
       <key>type</key>
@@ -1107,7 +1064,7 @@ costellation Plot.</value>
     </param>
     <param>
       <key>num_items</key>
-      <value>int(size_packed_file * 1)</value>
+      <value>int(size_packed_file * 0.5)</value>
     </param>
     <param>
       <key>type</key>
@@ -4327,12 +4284,6 @@ costellation Plot.</value>
     </param>
   </block>
   <connection>
-    <source_block_id>ITpp_Hamming_Decoder_par_0</source_block_id>
-    <sink_block_id>virtual_sink_1</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
     <source_block_id>analog_agc_xx_0</source_block_id>
     <sink_block_id>digital_pfb_clock_sync_xxx_0</sink_block_id>
     <source_key>0</source_key>
@@ -4352,7 +4303,7 @@ costellation Plot.</value>
   </connection>
   <connection>
     <source_block_id>blocks_delay_1</source_block_id>
-    <sink_block_id>ITpp_Hamming_Decoder_par_0</sink_block_id>
+    <sink_block_id>virtual_sink_1</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
