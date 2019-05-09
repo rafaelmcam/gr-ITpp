@@ -531,7 +531,7 @@ Para o NI210, sps = 4. (2 e 2)
     </param>
     <param>
       <key>value</key>
-      <value>"/home/rcampello/Main/FixedPath/OOT Gnuradio/gr-ITpp/examples/Simulação BPSK/Transmissão RedDot Usando ConstellationMod/red_dot.bmp"</value>
+      <value>"/home/rcampello/Main/FixedPath/OOT Gnuradio/gr-ITpp/examples/BPSK Ladams/11-04-2019 RTL/red_dot.bmp"</value>
     </param>
   </block>
   <block>
