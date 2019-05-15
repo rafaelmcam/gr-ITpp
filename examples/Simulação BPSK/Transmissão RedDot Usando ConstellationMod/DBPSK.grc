@@ -601,7 +601,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>2</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -652,7 +652,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(480, 116)</value>
+      <value>(488, 116)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -828,7 +828,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>2</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -891,7 +891,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(640, 628)</value>
+      <value>(656, 628)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1009,7 +1009,7 @@
     </param>
     <param>
       <key>num_items</key>
-      <value>size_packed_file*2</value>
+      <value>int(math.ceil(2 * size_packed_file * 15/7))</value>
     </param>
     <param>
       <key>type</key>
@@ -1420,7 +1420,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(320, 116)</value>
+      <value>(336, 116)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -2065,6 +2065,37 @@
     <param>
       <key>import</key>
       <value>import os</value>
+    </param>
+  </block>
+  <block>
+    <key>import</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(48, 652)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>import_1</value>
+    </param>
+    <param>
+      <key>import</key>
+      <value>import math</value>
     </param>
   </block>
   <block>
