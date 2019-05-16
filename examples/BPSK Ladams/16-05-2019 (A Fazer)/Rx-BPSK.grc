@@ -903,7 +903,7 @@ costellation Plot.</value>
     </param>
     <param>
       <key>_enabled</key>
-      <value>0</value>
+      <value>1</value>
     </param>
     <param>
       <key>file</key>
@@ -944,11 +944,11 @@ costellation Plot.</value>
       <key>comment</key>
       <value>Se não tiver usando o BCH:
 int(math.ceil(2 * size_packed_file * 15/15))
+e usar a função pronta readOutput do import me
 
 Se tiver usando o BCH:
 int(math.ceil(2 * size_packed_file * 15/7))
-+
-Script BCH_Recoder para os delays possíveis.</value>
+e usar Script BCH_Recoder para os delays possíveis.</value>
     </param>
     <param>
       <key>affinity</key>
@@ -956,7 +956,7 @@ Script BCH_Recoder para os delays possíveis.</value>
     </param>
     <param>
       <key>_enabled</key>
-      <value>0</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -1007,7 +1007,7 @@ Script BCH_Recoder para os delays possíveis.</value>
     </param>
     <param>
       <key>_enabled</key>
-      <value>0</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -1093,7 +1093,7 @@ Script BCH_Recoder para os delays possíveis.</value>
     </param>
     <param>
       <key>_enabled</key>
-      <value>0</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>

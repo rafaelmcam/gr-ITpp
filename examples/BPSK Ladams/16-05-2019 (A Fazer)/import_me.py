@@ -15,7 +15,7 @@ def readOutput(path, mini_preamble, header, img_shape):
     info = getBeginMiniPacket(rcv2, mini_preamble)
     rcv_array = findHeader(info, header)
     rgb = rcvArray2BMP(rcv_array, img_shape)
-    return rgb
+    return rgb, rcv_array
 
 def rcvArray2BMP(rcv_array, shape):
     bgr = np.flipud(rcv_array[122:].reshape(shape[0], shape[1], 3))
