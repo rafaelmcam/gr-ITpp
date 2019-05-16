@@ -3,6 +3,9 @@ IT++ no GNU Radio (Resultados)
 
 Branch principal de blocos testes/experimentos/resultados. 
 
+## Ladams sinal BPSK (12dB)
+
+![Overview](/examples/BPSK%20Ladams/16-05-2019%20(RedDot%20BCH)/sinal_12dB_TX_16maio.png)
 
 
 ## Curva de BER para BPSK - Hamming
