@@ -8,6 +8,20 @@ Branch principal de blocos testes/experimentos/resultados.
 ![Overview](/examples/BPSK%20Ladams/16-05-2019%20(RedDot%20BCH)/sinal_12dB_TX_16maio.png)
 
 
+## Ladams RedDot 12dB - Uso do Código BCH(15, 7)
+
+![Overview](/examples/BPSK%20Ladams/16-05-2019%20(RedDot%20BCH)/12dB_RedDot.png)
+
+## Ladams RedDot 15dB - Uso do Código BCH(15, 7)
+
+![Overview](/examples/BPSK%20Ladams/16-05-2019%20(RedDot%20BCH)/15dB_RedDot.png)
+
+## Ladams RedDot 18dB - Uso do Código BCH(15, 7)
+
+![Overview](/examples/BPSK%20Ladams/16-05-2019%20(RedDot%20BCH)/18dB_RedDot.png)
+
+
+
 ## Curva de BER para BPSK - Hamming
 
 ![Overview](/examples/Scripts%20Python/Curvas%20BER/BerCurve_Hamming_BPSK.png)
