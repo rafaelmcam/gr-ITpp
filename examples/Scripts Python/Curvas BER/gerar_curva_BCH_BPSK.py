@@ -60,7 +60,7 @@ except ImportError:
 N_BITS = 3e7
 RAND_SEED = 42
 
-BCH = (63, 30, 6)
+BCH = (15, 7, 2)
 
 
 def Q(x):
@@ -81,6 +81,17 @@ def Pb_Hard_Codes(p, N, t):
         x = (m + t) * comb(N, m, exact = True, repetition = False) * p ** (m) * (1 - p) ** (N - m)
         Sum += x
     return Sum/N
+
+def Cota_High(p, N, t):
+    Sum = 0
+    for m in range(0, t + 1):
+        #print(comb(N, m, exact = True, repetition = False))
+        x = comb(N, m, exact = True, repetition = False) * p ** (m) * (1 - p) ** (N - m)
+        Sum += x
+    return 1 - Sum
+
+def Cota_Low(p, N, t, k):
+    return (Cota_High(p, N, t)/k)
 
 def berawgn_BPSK(EbN0):
     """ Calculates theoretical bit error rate in AWGN (for BPSK and given Eb/N0) """
@@ -211,8 +222,12 @@ if __name__ == "__main__":
     #EbN0_range = [0.5*x for x in range(EbN0_min*2, (EbN0_max+1)*2)]
     ber_theory = [berawgn_BPSK(float(x))      for x in EbN0_range]
     ber_theory2 = [Pb_Hard_Codes(Pb_BPSK(from_dB(float(x) - 10 * math.log10(float(BCH[0])/float(BCH[1])))), BCH[0], BCH[2])  for x in EbN0_range]
+    cota_high = [Cota_High(Pb_BPSK(from_dB(float(x) - 10 * math.log10(float(BCH[0])/float(BCH[1])))), BCH[0], BCH[2]) for x in EbN0_range]
+    cota_low = [Cota_Low(Pb_BPSK(from_dB(float(x) - 10 * math.log10(float(BCH[0])/float(BCH[1])))), BCH[0], BCH[2], BCH[1]) for x in EbN0_range]
     print(ber_theory)
     print(ber_theory2)
+    print(cota_high)
+    print(cota_low)
     print "Simulating..."
     ber_simu   = [simulate_ber(x) for x in EbN0_range]
     ber_simu2  = [simulate_ber2(x) for x in EbN0_range]
@@ -223,6 +238,8 @@ if __name__ == "__main__":
     s.semilogy(EbN0_range, ber_theory2, 'y-.', label="Theoretical BPSK + BCH({}, {}, {})".format(BCH[0], BCH[1], BCH[2]))
     s.semilogy(EbN0_range, ber_simu, 'b-o', label="Simulated BPSK")
     s.semilogy(EbN0_range, ber_simu2, 'r-o', label="Simulated BPSK + BCH({}, {}, {})".format(BCH[0], BCH[1], BCH[2]))
+    s.semilogy(EbN0_range, cota_high, 'm-.', label="Cota High BCH({}, {}, {})".format(BCH[0], BCH[1], BCH[2]))
+    s.semilogy(EbN0_range, cota_low, 'c-.', label="Cota Low BCH({}, {}, {})".format(BCH[0], BCH[1], BCH[2]))
     s.set_title('BER Simulation - BPSK')
     s.set_xlabel('Eb/N0 (dB)')
     s.set_ylabel('BER')
