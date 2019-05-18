@@ -59,7 +59,7 @@ except ImportError:
 # Best to choose powers of 10
 #N_BITS = 1e7
 N_BITS = 1e7
-RAND_SEED = 42
+RAND_SEED = 43
 
 
 def Q(x):
@@ -80,6 +80,12 @@ def Pb_Hard_Codes(p, N, t):
         x = (m + t) * comb(N, m, exact = True, repetition = False) * p ** (m) * (1 - p) ** (N - m)
         Sum += x
     return Sum/N
+
+def Cota_High(Ps):
+    return (1 - ((1-Ps)**7 + 7 * (1 - Ps)**6 * Ps))
+
+def Cota_Low(Ps, k):
+    return (Cota_High(Ps)/k)
 
 def berawgn_BPSK(EbN0):
     """ Calculates theoretical bit error rate in AWGN (for BPSK and given Eb/N0) """
@@ -209,8 +215,12 @@ if __name__ == "__main__":
     #EbN0_range = [0.5*x for x in range(EbN0_min*2, (EbN0_max+1)*2)]
     ber_theory = [berawgn_BPSK(float(x))      for x in EbN0_range]
     ber_theory2 = [Pb_Hard_Codes(Pb_BPSK(from_dB(float(x) - 10 * math.log10(float(7)/float(4)))), 7, 1)  for x in EbN0_range]
+    cota_high = [Cota_High(Pb_BPSK(from_dB(float(x) - 10 * math.log10(float(7)/float(4))))) for x in EbN0_range]
+    cota_low = [Cota_Low(Pb_BPSK(from_dB(float(x) - 10 * math.log10(float(7)/float(4)))), 4) for x in EbN0_range]
     print(ber_theory)
     print(ber_theory2)
+    print(cota_high)
+    print(cota_low)
     print "Simulating..."
     ber_simu   = [simulate_ber(x) for x in EbN0_range]
     ber_simu2  = [simulate_ber2(x) for x in EbN0_range]
@@ -221,6 +231,8 @@ if __name__ == "__main__":
     s.semilogy(EbN0_range, ber_theory2, 'y-.', label="Theoretical BPSK + Hamming")
     s.semilogy(EbN0_range, ber_simu, 'b-o', label="Simulated BPSK")
     s.semilogy(EbN0_range, ber_simu2, 'r-o', label="Simulated BPSK - Hamming")
+    s.semilogy(EbN0_range, cota_high, 'm-.', label="Cota High")
+    s.semilogy(EbN0_range, cota_low, 'c-.', label="Cota Low")
     s.set_title('BER Simulation - BPSK')
     s.set_xlabel('Eb/N0 (dB)')
     s.set_ylabel('BER')
