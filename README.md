@@ -3,6 +3,12 @@ IT++ no GNU Radio (Resultados)
 
 Branch principal de blocos testes/experimentos/resultados. 
 
+# Resultados Práticos Ladams
+
+## BER Curve Ladams Diff. Encoding BPSK
+
+![Overview](/examples/Scripts%20Python/Curvas%20BER/BerCurve_DBPSK_Ladams_23_05.png)
+
 ## Ladams sinal BPSK (12dB Tx)
 ##### Potência recebida para mesma configuração de transmissão em dias diferentes.
 
@@ -24,7 +30,7 @@ Branch principal de blocos testes/experimentos/resultados.
 
 ![Overview](/examples/BPSK%20Ladams/16-05-2019%20(RedDot%20BCH)/18dB_RedDot.png)
 
-
+# Simulações
 
 ## Curva de BER para BPSK - Hamming
 
