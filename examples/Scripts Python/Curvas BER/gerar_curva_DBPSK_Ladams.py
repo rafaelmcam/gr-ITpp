@@ -143,14 +143,18 @@ if __name__ == "__main__":
     
     snr_pratica = [1.5815411190476192, 3.468054047619048, 4.559230476190477, \
  5.434059523809524, 5.4509823809523805, 7.716105476190478]
+    snr_STD = [0.4853298958173268, 0.4091092542810278, 0.3337094797442857,\
+ 0.3332578299794776, 0.3027723468203346, 0.2748177624501492]
     BER_pratica = [0.11585839285714283, 0.03976392857142852, 0.019170714285714263,\
  0.0063592857142856785, 0.006938571428571461, 0.0005371428571429027]
+
 
     f = pylab.figure()
     s = f.add_subplot(1,1,1)
     s.semilogy(EbN0_range, ber_theory, 'g-.', label="Theoretical DBPSK")
     s.semilogy(EbN0_range, ber_simu, 'b-o', label="Simulated DBPSK")
-    s.semilogy(snr_pratica, BER_pratica, 'm-o', label="LADAMS 23/05/2019 DBPSK")
+    #s.semilogy(snr_pratica, BER_pratica, 'm-o', label="LADAMS 23/05/2019 DBPSK")
+    s.errorbar(snr_pratica, BER_pratica, xerr = snr_STD, fmt='o', color = "indigo", capsize = 10, label = "Ladams 23/05/2019 DBPSK")
 
     s.set_title('BER Simulation - DBPSK')
     s.set_xlabel('Eb/N0 (dB)')
