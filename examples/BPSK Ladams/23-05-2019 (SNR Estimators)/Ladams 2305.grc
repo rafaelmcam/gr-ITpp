@@ -716,7 +716,7 @@ costellation Plot.</value>
     </param>
     <param>
       <key>file</key>
-      <value>/home/rcampello/Main/FixedPath/OOT Gnuradio/gr-ITpp/examples/BPSK Ladams/23-05-2019 (SNR Estimators)/rcv.data</value>
+      <value>/home/rcampello/Main/FixedPath/OOT Gnuradio/gr-ITpp/examples/BPSK Ladams/23-05-2019 (SNR Estimators)/rcv_6.data</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -1300,7 +1300,7 @@ costellation Plot.</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(288, 500)</value>
+      <value>(272, 500)</value>
     </param>
     <param>
       <key>_rotation</key>

@@ -3,9 +3,13 @@ IT++ no GNU Radio (Resultados)
 
 Branch principal de blocos testes/experimentos/resultados. 
 
-## Ladams sinal BPSK (12dB)
+## Ladams sinal BPSK (12dB Tx)
+##### Potência recebida para mesma configuração de transmissão em dias diferentes.
 
-![Overview](/examples/BPSK%20Ladams/16-05-2019%20(RedDot%20BCH)/sinal_12dB_TX_16maio.png)
+16-05-2019             |  23-05-2019
+:-------------------------:|:-------------------------:
+![](/examples/BPSK%20Ladams/16-05-2019%20(RedDot%20BCH)/sinal_12dB_TX_16maio.png) | ![](/examples/BPSK%20Ladams/16-05-2019%20(RedDot%20BCH)/12dB_TX_dia23maio.png)
+
 
 
 ## Ladams RedDot 12dB - Uso do Código BCH(15, 7)

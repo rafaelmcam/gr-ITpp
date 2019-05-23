@@ -515,7 +515,7 @@ Para o NI210, sps = 4. (2 e 2)
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -623,7 +623,7 @@ Para o NI210, sps = 4. (2 e 2)
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -903,7 +903,7 @@ costellation Plot.</value>
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>0</value>
     </param>
     <param>
       <key>file</key>
@@ -956,7 +956,7 @@ e usar Script BCH_Recoder para os delays possíveis.</value>
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -1007,7 +1007,7 @@ e usar Script BCH_Recoder para os delays possíveis.</value>
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -1093,7 +1093,7 @@ e usar Script BCH_Recoder para os delays possíveis.</value>
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
