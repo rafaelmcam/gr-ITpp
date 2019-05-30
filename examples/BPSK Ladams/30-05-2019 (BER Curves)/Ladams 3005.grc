@@ -495,7 +495,7 @@ Para o NI210, sps = 4. (2 e 2)
     </param>
     <param>
       <key>value</key>
-      <value>1.8e6</value>
+      <value>1.78571e6</value>
     </param>
   </block>
   <block>
@@ -665,7 +665,7 @@ costellation Plot.</value>
     </param>
     <param>
       <key>file</key>
-      <value>-1</value>
+      <value>/home/rcampello/Main/FixedPath/OOT Gnuradio/gr-ITpp/examples/BPSK Ladams/29-05-2019 (BER Curves)/output.data</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -708,7 +708,7 @@ costellation Plot.</value>
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -802,7 +802,7 @@ costellation Plot.</value>
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -845,7 +845,7 @@ costellation Plot.</value>
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -2717,7 +2717,7 @@ e acrescentar valor na strign "a".</value>
     </param>
     <param>
       <key>freq0</key>
-      <value>1000e6</value>
+      <value>1.01e9</value>
     </param>
     <param>
       <key>gain_mode0</key>

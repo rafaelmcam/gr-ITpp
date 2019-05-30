@@ -7,14 +7,16 @@ Branch principal de blocos testes/experimentos/resultados.
 
 ## BER Curve Ladams Diff. Encoding BPSK
 
-![Overview](/examples/Scripts%20Python/Curvas%20BER/BerCurve_DBPSK_Ladams_23_05.png)
+![Overview](/examples/BPSK%20Ladams/30-05-2019%20(BER%20Curves)/Curva.png)
 
 ## Ladams sinal BPSK (12dB Tx)
 ##### Potência recebida para mesma configuração de transmissão em dias diferentes.
 
-16-05-2019             |  23-05-2019
-:-------------------------:|:-------------------------:
-![](/examples/BPSK%20Ladams/16-05-2019%20(RedDot%20BCH)/sinal_12dB_TX_16maio.png) | ![](/examples/BPSK%20Ladams/16-05-2019%20(RedDot%20BCH)/12dB_TX_dia23maio.png)
+16-05-2019             |  23-05-2019 | 30-05-2019 |
+:-------------------------:|:-------------------------:| :-------------------------
+![](/examples/BPSK%20Ladams/16-05-2019%20(RedDot%20BCH)/sinal_12dB_TX_16maio.png) | ![](/examples/BPSK%20Ladams/16-05-2019%20(RedDot%20BCH)/12dB_TX_dia23maio.png) | ![](/examples/BPSK%20Ladams/16-05-2019%20(RedDot%20BCH)/12dB_TX_dia30maio.png)
+
+
 
 
 
