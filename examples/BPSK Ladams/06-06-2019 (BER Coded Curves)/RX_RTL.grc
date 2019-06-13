@@ -1210,7 +1210,7 @@ costellation Plot.</value>
     </param>
     <param>
       <key>tag_nsamples</key>
-      <value>100000</value>
+      <value>10000</value>
     </param>
     <param>
       <key>type</key>
