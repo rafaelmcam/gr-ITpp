@@ -233,6 +233,7 @@ if __name__ == "__main__":
     #numpy.save("theory_bpsk", ber_theory)
     #numpy.save("simu_bpsk", ber_simu)
     ber_simu2  = [simulate_ber2(x) for x in EbN0_range]
+    numpy.save("simu_coded_bpsk", ber_simu2)
 
     f = pylab.figure()
     s = f.add_subplot(1,1,1)
