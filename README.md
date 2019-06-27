@@ -5,9 +5,27 @@ Branch principal de blocos testes/experimentos/resultados.
 
 # Resultados Práticos Ladams
 
-## BER Curve Ladams Diff. Encoding BPSK
+<!-- ## BER Curve Ladams Diff. Encoding BPSK
 
 ![Overview](/examples/BPSK%20Ladams/30-05-2019%20(BER%20Curves)/Curva.png)
+
+## BER Curve Ladams Diff. Encoding BCH(15, 7) BPSK
+
+![Overview](/examples/BPSK%20Ladams/06-06-2019%20(BER%20Coded%20Curves)/Curva.png) -->
+
+
+##  <center> BER Curve LADAMS - Com Diff. Encoding BPSK
+Sem Código | BCH(15, 7)
+:-------------------------:|:-------------------------:
+![](/examples/BPSK%20Ladams/30-05-2019%20(BER%20Curves)/Curva.png) |  ![](/examples/BPSK%20Ladams/06-06-2019%20(BER%20Coded%20Curves)/Curva.png)
+
+
+##  <center> BER Curve LADAMS - Sem Diff. Encoding BPSK
+Sem Código | BCH(15, 7)
+:-------------------------:|:-------------------------:
+![](/examples/BPSK%20Ladams/27-06-2019%20(BER%20Sem%20Diff)/Curva.png) |  ![](/examples/BPSK%20Ladams/27-06-2019%20(BER%20Sem%20Diff)/Com%20Código/Curva.png)
+
+
 
 ## Ladams sinal BPSK (12dB Tx)
 ##### Potência recebida para mesma configuração de transmissão em dias diferentes.
@@ -15,8 +33,6 @@ Branch principal de blocos testes/experimentos/resultados.
 16-05-2019             |  23-05-2019 | 30-05-2019 |
 :-------------------------:|:-------------------------:| :-------------------------
 ![](/examples/BPSK%20Ladams/16-05-2019%20(RedDot%20BCH)/sinal_12dB_TX_16maio.png) | ![](/examples/BPSK%20Ladams/16-05-2019%20(RedDot%20BCH)/12dB_TX_dia23maio.png) | ![](/examples/BPSK%20Ladams/16-05-2019%20(RedDot%20BCH)/12dB_TX_dia30maio.png)
-
-
 
 
 
