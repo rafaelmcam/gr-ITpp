@@ -69,7 +69,7 @@ Transferência de Imagem SIMULADA - Sem Tratamento de Recepção Extra.      |
 
 
 
-Transferência de Imagem SIMULADA - Canal com Insertion/Deletion + AWGN - Sem uso de pacotes.  (Baixo Edit distance na região da tira.)    |
+#### Transferência de Imagem SIMULADA - Canal com Insertion/Deletion + AWGN - Sem uso de pacotes.  (Baixo Edit distance na região da tira.)
 Img Recebida | Bits corretos e recebidos na região da tira.
 :-------------------------:|:-------------------------:
 ![](examples/Simulação%20BPSK/Transmissão%20RedDot%20Usando%20ConstellationMod/Insertion.bmp) |  ![](examples/Simulação%20BPSK/Transmissão%20RedDot%20Usando%20ConstellationMod/edit_distance.png)
