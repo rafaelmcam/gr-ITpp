@@ -68,7 +68,14 @@ Transferência de Imagem SIMULADA - Sem Tratamento de Recepção Extra.      |
 ![](examples/Scripts&#32;Python/Scripts/BPSK&#32;-&#32;Sem&#32;Correlate/script_images.png) |  
 
 
-Transferência de Imagem SIMULADA - Usando Mini Preambles + Header + Correlate.      |  
+
+Transferência de Imagem SIMULADA - Canal com Insertion/Deletion + AWGN - Sem uso de pacotes.  (Baixo Edit distance na região da tira.)    |
+:-------------------------:|
+![](examples/Simulação%20BPSK/Transmissão%20RedDot%20Usando%20ConstellationMod/Insertion.bmp) |  
+
+
+
+Transferência de Imagem SIMULADA - Usando Mini Preambles + Header + Correlate.   |  
 :-------------------------:|
 ![](examples/Scripts&#32;Python/Scripts/BPSK&#32;-&#32;Com&#32;Correlate/script_images_red_dot.png) |  
 
