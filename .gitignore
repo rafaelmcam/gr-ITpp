@@ -1,7 +1,6 @@
 *.pyc
 .vscode/
 build/
-MANIFEST.md
 notas.txt
 
 
