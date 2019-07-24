@@ -31,10 +31,41 @@ class qa_BCH_Decoder (gr_unittest.TestCase):
     def tearDown (self):
         self.tb = None
 
-    def test_001_t (self):
-        # set up fg
-        self.tb.run ()
-        # check data
+    def test_001_bch_decoder_bb(self):
+        expected_result = (0, 0, 0, 0, 1, 0, 1)
+        src_data = (0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1)
+        src = blocks.vector_source_b(src_data)
+        sqr = ITpp.BCH_Decoder(15, 2)
+        dst = blocks.vector_sink_b()
+        self.tb.connect(src, sqr)
+        self.tb.connect(sqr, dst)
+        self.tb.run()
+        result_data = dst.data()
+        self.assertFloatTuplesAlmostEqual(expected_result, result_data, 6)
+    
+    def test_002_bch_decoder_bb(self):
+        expected_result = (0, 0, 0, 0, 0, 0, 0)
+        src_data = (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+        src = blocks.vector_source_b(src_data)
+        sqr = ITpp.BCH_Decoder(15, 2)
+        dst = blocks.vector_sink_b()
+        self.tb.connect(src, sqr)
+        self.tb.connect(sqr, dst)
+        self.tb.run()
+        result_data = dst.data()
+        self.assertFloatTuplesAlmostEqual(expected_result, result_data, 6)
+
+    def test_003_bch_decoder_bb(self):
+        expected_result = (1, 1, 1, 1, 1, 1, 1)
+        src_data = (1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1)
+        src = blocks.vector_source_b(src_data)
+        sqr = ITpp.BCH_Decoder(15, 2)
+        dst = blocks.vector_sink_b()
+        self.tb.connect(src, sqr)
+        self.tb.connect(sqr, dst)
+        self.tb.run()
+        result_data = dst.data()
+        self.assertFloatTuplesAlmostEqual(expected_result, result_data, 6)
 
 
 if __name__ == '__main__':
