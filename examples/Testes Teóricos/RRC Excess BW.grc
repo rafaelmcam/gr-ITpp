@@ -6,7 +6,7 @@
     <key>options</key>
     <param>
       <key>author</key>
-      <value></value>
+      <value>Rafael Campello</value>
     </param>
     <param>
       <key>window_size</key>
@@ -78,7 +78,7 @@
     </param>
     <param>
       <key>title</key>
-      <value></value>
+      <value>RRC Excess BW</value>
     </param>
   </block>
   <block>
@@ -93,7 +93,7 @@
     </param>
     <param>
       <key>type</key>
-      <value>bpsk</value>
+      <value>qpsk</value>
     </param>
     <param>
       <key>dims</key>
@@ -301,11 +301,11 @@
     </param>
     <param>
       <key>excess_bw</key>
-      <value>0.01</value>
+      <value>0.350</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(392, 172)</value>
+      <value>(416, 172)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -368,7 +368,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(416, 324)</value>
+      <value>(424, 324)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -427,11 +427,11 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(728, 320)</value>
+      <value>(744, 320)</value>
     </param>
     <param>
       <key>gui_hint</key>
-      <value></value>
+      <value>0, 1, 1, 1</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -459,15 +459,15 @@
     </param>
     <param>
       <key>label1</key>
-      <value>BW Baixo</value>
+      <value>BW=350m</value>
     </param>
     <param>
       <key>marker1</key>
-      <value>0</value>
+      <value>1</value>
     </param>
     <param>
       <key>style1</key>
-      <value>0</value>
+      <value>2</value>
     </param>
     <param>
       <key>width1</key>
@@ -507,15 +507,15 @@
     </param>
     <param>
       <key>label2</key>
-      <value>BW Alto</value>
+      <value>BW=900m</value>
     </param>
     <param>
       <key>marker2</key>
-      <value>0</value>
+      <value>6</value>
     </param>
     <param>
       <key>style2</key>
-      <value>0</value>
+      <value>4</value>
     </param>
     <param>
       <key>width2</key>
@@ -794,11 +794,11 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(736, 132)</value>
+      <value>(752, 196)</value>
     </param>
     <param>
       <key>gui_hint</key>
-      <value></value>
+      <value>0, 0, 1, 1</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -826,7 +826,7 @@
     </param>
     <param>
       <key>label1</key>
-      <value>BW Baixo</value>
+      <value>BW=350m</value>
     </param>
     <param>
       <key>width1</key>
@@ -858,7 +858,7 @@
     </param>
     <param>
       <key>label2</key>
-      <value>BW Alto</value>
+      <value>BW=900m</value>
     </param>
     <param>
       <key>width2</key>
