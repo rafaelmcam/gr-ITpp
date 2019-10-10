@@ -21,3 +21,5 @@ __pycache__/
 *.data
 *.txt
 *.wav
+
+!examples/Hier Blocks/note.txt
