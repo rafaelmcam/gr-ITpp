@@ -14,7 +14,7 @@
     </param>
     <param>
       <key>category</key>
-      <value>[TCC Hier Blocks]</value>
+      <value>[ITpp]/[TCC Hier Blocks]</value>
     </param>
     <param>
       <key>comment</key>
@@ -30,7 +30,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(8, 8)</value>
+      <value>(8, 12)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -105,7 +105,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(608, 252)</value>
+      <value>(536, 196)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -156,7 +156,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(456, 256)</value>
+      <value>(368, 200)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -195,7 +195,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(288, 252)</value>
+      <value>(216, 196)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -234,7 +234,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(512, 28)</value>
+      <value>(400, 116)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -277,7 +277,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(408, 28)</value>
+      <value>(312, 116)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -316,7 +316,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(736, 236)</value>
+      <value>(656, 196)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -359,7 +359,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(104, 236)</value>
+      <value>(64, 196)</value>
     </param>
     <param>
       <key>_rotation</key>

@@ -6,7 +6,7 @@
     <key>options</key>
     <param>
       <key>author</key>
-      <value></value>
+      <value>Rafael Campello</value>
     </param>
     <param>
       <key>window_size</key>
@@ -78,7 +78,7 @@
     </param>
     <param>
       <key>title</key>
-      <value></value>
+      <value>QPSK Basic Simulation</value>
     </param>
   </block>
   <block>
@@ -105,7 +105,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(688, 36)</value>
+      <value>(752, 36)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -148,7 +148,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(176, 12)</value>
+      <value>(240, 12)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -211,7 +211,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(400, 4)</value>
+      <value>(464, 4)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -274,7 +274,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(272, 20)</value>
+      <value>(336, 20)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -337,7 +337,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(552, 44)</value>
+      <value>(616, 44)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -396,7 +396,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(120, 84)</value>
+      <value>(184, 84)</value>
     </param>
     <param>
       <key>_rotation</key>
