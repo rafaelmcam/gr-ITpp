@@ -1,9 +1,16 @@
-title: The gr-ITpp OOT Module
-brief: This module is a collection of blocks and examples used in Author's Undergraduate Thesis in Electronic Engineering at UFPE - Federal University of Pernambuco, Brazil. Main topics are IT++ library integration, BCH Encoder/Decoder, Hamming Interleavers, PSK image transmition using USRP N210/RTL2832U, obtaining BER Curves.
-
+title: The ITPP OOT Module
+brief: Short description of gr-ITpp
+tags: # Tags are arbitrary, but look at CGRAN what other authors are using
+  - sdr
 author:
-  - Rafael Mendes Campello <rafael.campello@hotmail.com>
-
-#repo: https://github.com/rafaelmcam/gr-ITpp
+  - Author Name <authors@email.address>
+copyright_owner:
+  - Copyright Owner 1
+license:
+#repo: # Put the URL of the repository here, or leave blank for default
+#website: <module_website> # If you have a separate project website, put it here
+#icon: <icon_url> # Put a URL to a square image here that will be used as an icon on CGRAN
 ---
-
+A longer, multi-line description of gr-ITpp.
+You may use some *basic* Markdown here.
+If left empty, it will try to find a README file instead.

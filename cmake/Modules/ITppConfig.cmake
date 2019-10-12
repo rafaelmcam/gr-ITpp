@@ -22,9 +22,10 @@ FIND_LIBRARY(
           /usr/local/lib64
           /usr/lib
           /usr/lib64
-)
+          )
+
+include("${CMAKE_CURRENT_LIST_DIR}/ITppTarget.cmake")
 
 INCLUDE(FindPackageHandleStandardArgs)
 FIND_PACKAGE_HANDLE_STANDARD_ARGS(ITPP DEFAULT_MSG ITPP_LIBRARIES ITPP_INCLUDE_DIRS)
 MARK_AS_ADVANCED(ITPP_LIBRARIES ITPP_INCLUDE_DIRS)
-

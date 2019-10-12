@@ -1,7 +1,0 @@
-Commonly used blocks clustering.
-
-Install all blocks clusters with provided script.
-
-
-chmod +x install_hier_blocks.sh
-./install_hier_blocks.sh
