@@ -819,7 +819,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(672, 428)</value>
+      <value>(672, 436)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -968,7 +968,7 @@
     </param>
     <param>
       <key>differential</key>
-      <value>False</value>
+      <value>True</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -1063,7 +1063,7 @@
     </param>
   </block>
   <block>
-    <key>digital_fll_band_edge_cc</key>
+    <key>digital_diff_decoder_bb</key>
     <param>
       <key>alias</key>
       <value></value>
@@ -1081,12 +1081,8 @@
       <value>True</value>
     </param>
     <param>
-      <key>rolloff</key>
-      <value>0.35</value>
-    </param>
-    <param>
       <key>_coordinate</key>
-      <value>(880, 416)</value>
+      <value>(616, 836)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1094,11 +1090,7 @@
     </param>
     <param>
       <key>id</key>
-      <value>digital_fll_band_edge_cc_0</value>
-    </param>
-    <param>
-      <key>w</key>
-      <value>62.8e-3</value>
+      <value>digital_diff_decoder_bb_0</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -1109,16 +1101,8 @@
       <value>0</value>
     </param>
     <param>
-      <key>filter_size</key>
-      <value>45</value>
-    </param>
-    <param>
-      <key>samps_per_sym</key>
-      <value>4</value>
-    </param>
-    <param>
-      <key>type</key>
-      <value>cc</value>
+      <key>modulus</key>
+      <value>2</value>
     </param>
   </block>
   <block>
@@ -1971,7 +1955,7 @@ Diff. Encoding ajuda?</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(688, 332)</value>
+      <value>(688, 348)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -2243,7 +2227,7 @@ Diff. Encoding ajuda?</value>
     </param>
     <param>
       <key>size</key>
-      <value>2*6*8</value>
+      <value>2*3*8</value>
     </param>
     <param>
       <key>srate</key>
@@ -2358,7 +2342,7 @@ Diff. Encoding ajuda?</value>
   </connection>
   <connection>
     <source_block_id>channels_channel_model_0</source_block_id>
-    <sink_block_id>digital_fll_band_edge_cc_0</sink_block_id>
+    <sink_block_id>digital_pfb_clock_sync_xxx_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -2376,7 +2360,7 @@ Diff. Encoding ajuda?</value>
   </connection>
   <connection>
     <source_block_id>digital_constellation_decoder_cb_0</source_block_id>
-    <sink_block_id>blocks_uchar_to_float_0</sink_block_id>
+    <sink_block_id>digital_diff_decoder_bb_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -2399,8 +2383,8 @@ Diff. Encoding ajuda?</value>
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>digital_fll_band_edge_cc_0</source_block_id>
-    <sink_block_id>digital_pfb_clock_sync_xxx_0</sink_block_id>
+    <source_block_id>digital_diff_decoder_bb_0</source_block_id>
+    <sink_block_id>blocks_uchar_to_float_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
