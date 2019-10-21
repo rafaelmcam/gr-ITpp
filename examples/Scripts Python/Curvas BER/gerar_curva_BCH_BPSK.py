@@ -230,8 +230,9 @@ if __name__ == "__main__":
     print(cota_low)
     print "Simulating..."
     ber_simu   = [simulate_ber(x) for x in EbN0_range]
-    #numpy.save("theory_bpsk", ber_theory)
-    #numpy.save("simu_bpsk", ber_simu)
+    numpy.save("theory_bpsk", ber_theory)
+    numpy.save("theory_bpsk_coded", ber_theory2)
+    numpy.save("simu_bpsk", ber_simu)
     ber_simu2  = [simulate_ber2(x) for x in EbN0_range]
     numpy.save("simu_coded_bpsk", ber_simu2)
 
