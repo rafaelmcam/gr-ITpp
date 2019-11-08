@@ -82,6 +82,33 @@
     </param>
   </block>
   <block>
+    <key>variable</key>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(360, 396)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>Correction_BCH_15_7_2</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>10 * float(math.log10(15./7)) if use_code else 0</value>
+    </param>
+  </block>
+  <block>
     <key>variable_qtgui_range</key>
     <param>
       <key>comment</key>
@@ -276,7 +303,34 @@
     </param>
     <param>
       <key>value</key>
-      <value>256*256*3</value>
+      <value>450*600*3</value>
+    </param>
+  </block>
+  <block>
+    <key>variable</key>
+    <param>
+      <key>comment</key>
+      <value>Ativar/Desativar Encoder/Decoder e mudar aqui.</value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(528, 396)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>use_code</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>False</value>
     </param>
   </block>
   <block>
@@ -323,7 +377,7 @@
     </param>
   </block>
   <block>
-    <key>ITpp_Hamming_Decoder_par</key>
+    <key>ITpp_BCH_Decoder</key>
     <param>
       <key>alias</key>
       <value></value>
@@ -338,19 +392,19 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>2</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(336, 220)</value>
+      <value>(312, 212)</value>
     </param>
     <param>
       <key>_rotation</key>
-      <value>0</value>
+      <value>180</value>
     </param>
     <param>
       <key>id</key>
-      <value>ITpp_Hamming_Decoder_par_0</value>
+      <value>ITpp_BCH_Decoder_0</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -361,12 +415,16 @@
       <value>0</value>
     </param>
     <param>
-      <key>m</key>
-      <value>3</value>
+      <key>n</key>
+      <value>15</value>
+    </param>
+    <param>
+      <key>t</key>
+      <value>2</value>
     </param>
   </block>
   <block>
-    <key>ITpp_Hamming_Encoder_par</key>
+    <key>ITpp_BCH_Encoder</key>
     <param>
       <key>alias</key>
       <value></value>
@@ -381,11 +439,11 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>2</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(432, 28)</value>
+      <value>(432, 20)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -393,7 +451,7 @@
     </param>
     <param>
       <key>id</key>
-      <value>ITpp_Hamming_Encoder_par_0</value>
+      <value>ITpp_BCH_Encoder_0</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -404,15 +462,19 @@
       <value>0</value>
     </param>
     <param>
-      <key>m</key>
-      <value>3</value>
+      <key>n</key>
+      <value>15</value>
+    </param>
+    <param>
+      <key>t</key>
+      <value>2</value>
     </param>
   </block>
   <block>
     <key>analog_noise_source_x</key>
     <param>
       <key>amp</key>
-      <value>1.0 / math.sqrt(const[const_type].bits_per_symbol() * 10**(float(EbN0-2.43)/10))</value>
+      <value>1.0 / math.sqrt(const[const_type].bits_per_symbol() * 10**(float(EbN0-Correction_BCH_15_7_2)/10))</value>
     </param>
     <param>
       <key>alias</key>
@@ -420,7 +482,7 @@
     </param>
     <param>
       <key>comment</key>
-      <value>Subtrair -2.43 (-10log(7/4)) se for usando o código.</value>
+      <value>Fator de correção necessário quando utilizar codificação.</value>
     </param>
     <param>
       <key>affinity</key>
@@ -538,7 +600,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(296, 284)</value>
+      <value>(288, 284)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -593,11 +655,11 @@
     </param>
     <param>
       <key>file</key>
-      <value>/home/rcampello/Main/9p/GnuRadio/Imagens - Simulação/Usando Chunks/chunk_sink.data</value>
+      <value>/home/rcampello/Main/FixedPath/OOT Gnuradio/gr-ITpp/examples/Simulação BPSK/Transmissão RedDot Usando Chunks/chunk_sink.data</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(856, 268)</value>
+      <value>(824, 268)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -640,7 +702,7 @@
     </param>
     <param>
       <key>file</key>
-      <value>/home/rcampello/Main/9p/GnuRadio/Imagens - Simulação/Usando Chunks/red_dot.data</value>
+      <value>/home/rcampello/Main/FixedPath/OOT Gnuradio/gr-ITpp/examples/Simulação BPSK/Transmissão RedDot Usando Chunks/penguin_data.data</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -695,7 +757,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(696, 284)</value>
+      <value>(664, 284)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -785,7 +847,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>2</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -1399,13 +1461,13 @@
     </param>
   </block>
   <connection>
-    <source_block_id>ITpp_Hamming_Decoder_par_0</source_block_id>
+    <source_block_id>ITpp_BCH_Decoder_0</source_block_id>
     <sink_block_id>blocks_delay_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>ITpp_Hamming_Encoder_par_0</source_block_id>
+    <source_block_id>ITpp_BCH_Encoder_0</source_block_id>
     <sink_block_id>digital_chunks_to_symbols_xx_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
@@ -1466,7 +1528,7 @@
   </connection>
   <connection>
     <source_block_id>blocks_unpack_k_bits_bb_0</source_block_id>
-    <sink_block_id>ITpp_Hamming_Encoder_par_0</sink_block_id>
+    <sink_block_id>ITpp_BCH_Encoder_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -1478,7 +1540,7 @@
   </connection>
   <connection>
     <source_block_id>digital_constellation_decoder_cb_0_0</source_block_id>
-    <sink_block_id>ITpp_Hamming_Decoder_par_0</sink_block_id>
+    <sink_block_id>ITpp_BCH_Decoder_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
