@@ -303,7 +303,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>450*600*3</value>
+      <value>256 * 256 * 3</value>
     </param>
   </block>
   <block>
@@ -851,7 +851,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(520, 284)</value>
+      <value>(504, 284)</value>
     </param>
     <param>
       <key>_rotation</key>

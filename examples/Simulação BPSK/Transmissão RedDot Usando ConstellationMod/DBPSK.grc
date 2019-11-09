@@ -203,7 +203,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>4</value>
+      <value>37</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -368,7 +368,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>0.7</value>
+      <value>1</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -447,7 +447,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>"/home/rcampello/Main/FixedPath/OOT Gnuradio/gr-ITpp/examples/Simulação BPSK/Transmissão RedDot Usando ConstellationMod/penguin.bmp"</value>
+      <value>"/home/rcampello/Main/FixedPath/OOT Gnuradio/gr-ITpp/examples/Simulação BPSK/Transmissão RedDot Usando ConstellationMod/red_dot.bmp"</value>
     </param>
   </block>
   <block>
@@ -605,7 +605,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(560, 356)</value>
+      <value>(560, 388)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -625,11 +625,11 @@
     </param>
     <param>
       <key>n</key>
-      <value>15</value>
+      <value>63</value>
     </param>
     <param>
       <key>t</key>
-      <value>2</value>
+      <value>3</value>
     </param>
   </block>
   <block>
@@ -672,11 +672,11 @@
     </param>
     <param>
       <key>n</key>
-      <value>15</value>
+      <value>63</value>
     </param>
     <param>
       <key>t</key>
-      <value>2</value>
+      <value>6</value>
     </param>
   </block>
   <block>
@@ -699,7 +699,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(560, 388)</value>
+      <value>(560, 324)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1009,7 +1009,7 @@
     </param>
     <param>
       <key>num_items</key>
-      <value>int(math.ceil(1 * size_packed_file * 15/15))</value>
+      <value>int(math.ceil(1 * size_packed_file * 63/63))</value>
     </param>
     <param>
       <key>type</key>
@@ -1222,6 +1222,61 @@
     <param>
       <key>type</key>
       <value>byte</value>
+    </param>
+    <param>
+      <key>vlen</key>
+      <value>1</value>
+    </param>
+  </block>
+  <block>
+    <key>blocks_tag_debug</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>display</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(1144, 100)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>blocks_tag_debug_0</value>
+    </param>
+    <param>
+      <key>type</key>
+      <value>complex</value>
+    </param>
+    <param>
+      <key>filter</key>
+      <value></value>
+    </param>
+    <param>
+      <key>name</key>
+      <value>Debug SNR</value>
+    </param>
+    <param>
+      <key>num_inputs</key>
+      <value>1</value>
     </param>
     <param>
       <key>vlen</key>
@@ -1963,6 +2018,57 @@
     <param>
       <key>modulus</key>
       <value>2</value>
+    </param>
+  </block>
+  <block>
+    <key>digital_mpsk_snr_est_cc</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>alpha</key>
+      <value>0.001</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(952, 100)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>digital_mpsk_snr_est_cc_0</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>tag_nsamples</key>
+      <value>100000</value>
+    </param>
+    <param>
+      <key>type</key>
+      <value>3</value>
     </param>
   </block>
   <block>
@@ -3649,6 +3755,12 @@
     <sink_key>0</sink_key>
   </connection>
   <connection>
+    <source_block_id>blocks_stream_mux_0</source_block_id>
+    <sink_block_id>blocks_unpack_k_bits_bb_1_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
     <source_block_id>blocks_throttle_0</source_block_id>
     <sink_block_id>blocks_stream_mux_0</sink_block_id>
     <source_key>0</source_key>
@@ -3752,6 +3864,12 @@
   </connection>
   <connection>
     <source_block_id>digital_costas_loop_cc_0</source_block_id>
+    <sink_block_id>digital_mpsk_snr_est_cc_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>digital_costas_loop_cc_0</source_block_id>
     <sink_block_id>qtgui_const_sink_x_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
@@ -3759,6 +3877,12 @@
   <connection>
     <source_block_id>digital_diff_decoder_bb_0</source_block_id>
     <sink_block_id>blocks_delay_0_0_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>digital_mpsk_snr_est_cc_0</source_block_id>
+    <sink_block_id>blocks_tag_debug_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>

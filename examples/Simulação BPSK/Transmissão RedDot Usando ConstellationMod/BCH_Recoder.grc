@@ -105,7 +105,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>4</value>
+      <value>37</value>
     </param>
   </block>
   <block>
@@ -175,11 +175,11 @@
     </param>
     <param>
       <key>n</key>
-      <value>15</value>
+      <value>63</value>
     </param>
     <param>
       <key>t</key>
-      <value>2</value>
+      <value>6</value>
     </param>
   </block>
   <block>
@@ -249,7 +249,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>2</value>
     </param>
     <param>
       <key>_coordinate</key>
