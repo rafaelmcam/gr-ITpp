@@ -17,13 +17,13 @@ Branch principal de blocos testes/experimentos/resultados.
 ##  <center> BER Curve LADAMS - Com Diff. Encoding BPSK
 Sem Código | BCH(15, 7)
 :-------------------------:|:-------------------------:
-![](/examples/BPSK%20Ladams/30-05-2019%20(BER%20Curves)/Curva.png) |  ![](/examples/BPSK%20Ladams/06-06-2019%20(BER%20Coded%20Curves)/Curva.png)
+![](/examples/BPSK%20Ladams/30-05-2019%20(BER%20Curves)/de-bpsk.png) |  ![](/examples/BPSK%20Ladams/06-06-2019%20(BER%20Coded%20Curves)/bpsk-coded.png)
 
 
 ##  <center> BER Curve LADAMS - Sem Diff. Encoding BPSK
 Sem Código | BCH(15, 7)
 :-------------------------:|:-------------------------:
-![](/examples/BPSK%20Ladams/27-06-2019%20(BER%20Sem%20Diff)/Curva.png) |  ![](/examples/BPSK%20Ladams/27-06-2019%20(BER%20Sem%20Diff)/Com%20Código/Curva.png)
+![](/examples/BPSK%20Ladams/27-06-2019%20(BER%20Sem%20Diff)/bpsk.png) |  ![](/examples/BPSK%20Ladams/27-06-2019%20(BER%20Sem%20Diff)/Com%20Código/Curva.png)
 
 
 
