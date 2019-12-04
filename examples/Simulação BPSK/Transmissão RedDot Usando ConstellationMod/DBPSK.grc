@@ -207,7 +207,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -224,6 +224,69 @@
     <param>
       <key>id</key>
       <value>delay2</value>
+    </param>
+    <param>
+      <key>label</key>
+      <value></value>
+    </param>
+    <param>
+      <key>min_len</key>
+      <value>100</value>
+    </param>
+    <param>
+      <key>orient</key>
+      <value>Qt.Horizontal</value>
+    </param>
+    <param>
+      <key>start</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>step</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>stop</key>
+      <value>100</value>
+    </param>
+    <param>
+      <key>rangeType</key>
+      <value>float</value>
+    </param>
+    <param>
+      <key>widget</key>
+      <value>counter_slider</value>
+    </param>
+  </block>
+  <block>
+    <key>variable_qtgui_range</key>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>19</value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(584, 12)</value>
+    </param>
+    <param>
+      <key>gui_hint</key>
+      <value>1, 1, 1, 1</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>delay3</value>
     </param>
     <param>
       <key>label</key>
@@ -368,7 +431,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>0.3</value>
+      <value>0.0</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -625,11 +688,11 @@
     </param>
     <param>
       <key>n</key>
-      <value>63</value>
+      <value>15</value>
     </param>
     <param>
       <key>t</key>
-      <value>3</value>
+      <value>2</value>
     </param>
   </block>
   <block>
@@ -648,7 +711,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>2</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -672,11 +735,11 @@
     </param>
     <param>
       <key>n</key>
-      <value>63</value>
+      <value>15</value>
     </param>
     <param>
       <key>t</key>
-      <value>6</value>
+      <value>2</value>
     </param>
   </block>
   <block>
@@ -742,7 +805,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(536, 324)</value>
+      <value>(560, 324)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -828,11 +891,11 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>2</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(432, 388)</value>
+      <value>(424, 388)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -841,6 +904,61 @@
     <param>
       <key>id</key>
       <value>blocks_delay_0_0_0</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>num_ports</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>type</key>
+      <value>byte</value>
+    </param>
+    <param>
+      <key>vlen</key>
+      <value>1</value>
+    </param>
+  </block>
+  <block>
+    <key>blocks_delay</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>delay</key>
+      <value>int(delay3)</value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>2</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(440, 348)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>blocks_delay_0_0_0_0</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -1009,7 +1127,7 @@
     </param>
     <param>
       <key>num_items</key>
-      <value>int(math.ceil(1 * size_packed_file * 63/63))</value>
+      <value>int(math.ceil(1 * size_packed_file * 15/7))</value>
     </param>
     <param>
       <key>type</key>
@@ -1087,7 +1205,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>2</value>
+      <value>1</value>
     </param>
     <param>
       <key>endianness</key>
@@ -1471,11 +1589,11 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>2</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(336, 116)</value>
+      <value>(304, 116)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -3672,12 +3790,6 @@
   </connection>
   <connection>
     <source_block_id>ITpp_Hamming_Decoder_par_0</source_block_id>
-    <sink_block_id>blocks_pack_k_bits_bb_1</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>ITpp_Hamming_Decoder_par_0</source_block_id>
     <sink_block_id>blocks_uchar_to_float_0_0_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
@@ -3715,6 +3827,12 @@
   <connection>
     <source_block_id>blocks_delay_0_0_0</source_block_id>
     <sink_block_id>ITpp_Hamming_Decoder_par_1</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>blocks_delay_0_0_0_0</source_block_id>
+    <sink_block_id>ITpp_BCH_Decoder_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -3877,6 +3995,12 @@
   <connection>
     <source_block_id>digital_diff_decoder_bb_0</source_block_id>
     <sink_block_id>blocks_delay_0_0_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>digital_diff_decoder_bb_0</source_block_id>
+    <sink_block_id>blocks_delay_0_0_0_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
