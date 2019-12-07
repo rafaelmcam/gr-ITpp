@@ -179,7 +179,7 @@ class BERAWGNSimu2(gr.top_block):
 	dec   = BCH_Decoder(15, 2)
         ber   = BitErrors(self.const.bits_per_symbol())
         self.sink  = blocks.vector_sink_f()
-        self.connect(src, enc, diff_enc, mod, add, demod, diff_dec, dec, ber, self.sink)
+        self.connect(src, diff_enc, enc, mod, add, demod, dec, diff_dec, ber, self.sink)
         self.connect(noise, (add, 1))
         self.connect(src, (ber, 1))
 
