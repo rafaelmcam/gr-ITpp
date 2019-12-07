@@ -312,7 +312,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(600, 244)</value>
+      <value>(696, 244)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -410,7 +410,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(416, 260)</value>
+      <value>(528, 260)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -461,7 +461,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(280, 260)</value>
+      <value>(392, 260)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -582,9 +582,52 @@
       <value>0</value>
     </param>
   </block>
+  <block>
+    <key>digital_diff_decoder_bb</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(192, 260)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>digital_diff_decoder_bb_0</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>modulus</key>
+      <value>2</value>
+    </param>
+  </block>
   <connection>
     <source_block_id>ITpp_BCH_Decoder_0</source_block_id>
-    <sink_block_id>blocks_pack_k_bits_bb_1</sink_block_id>
+    <sink_block_id>digital_diff_decoder_bb_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -627,6 +670,12 @@
   <connection>
     <source_block_id>blocks_unpack_k_bits_bb_0</source_block_id>
     <sink_block_id>ITpp_BCH_Encoder_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>digital_diff_decoder_bb_0</source_block_id>
+    <sink_block_id>blocks_pack_k_bits_bb_1</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>

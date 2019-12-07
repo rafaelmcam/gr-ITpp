@@ -213,19 +213,23 @@ if __name__ == "__main__":
     EbN0_range = range(EbN0_min, EbN0_max+1)
     #EbN0_range = [0.5*x for x in range(EbN0_min*2, (EbN0_max+1)*2)]
     ber_theory = [berawgn_DBPSK(float(x))      for x in EbN0_range]
-    #ber_theory2 = [Pb_Hard_Codes(Pb_DBPSK(from_dB(float(x) - 10 * math.log10(float(15)/float(7)))), 15, 2)  for x in EbN0_range]
+    ber_theory2 = [Pb_Hard_Codes(Pb_DBPSK(from_dB(float(x) - 10 * math.log10(float(15)/float(7)))), 15, 2)  for x in EbN0_range]
     print(ber_theory)
     #print(ber_theory2)
     print "Simulating..."
     ber_simu   = [simulate_ber(x) for x in EbN0_range]
     ber_simu2  = [simulate_ber2(x) for x in EbN0_range]
+    numpy.save("theory_de-bpsk", ber_theory)
+    numpy.save("simu_de-bpsk", ber_simu)
+    numpy.save("simu_de-bpsk-bch-15-7-2", ber_simu2)
+    #numpy.save("theory_de-bpsk-bch-15-7-2", ber_theory2)
 
     f = pylab.figure()
     s = f.add_subplot(1,1,1)
-    s.semilogy(EbN0_range, ber_theory, 'g-.', label="Theoretical DBPSK")
-    #s.semilogy(EbN0_range, ber_theory2, 'y-.', label="Theoretical DBPSK + BCH(15, 7, 2)")
-    s.semilogy(EbN0_range, ber_simu, 'b-o', label="Simulated DBPSK")
-    s.semilogy(EbN0_range, ber_simu2, 'r-o', label="Simulated DBPSK + BCH(15, 7, 2)")
+    s.semilogy(EbN0_range, ber_theory, 'g-.', label="Theoretical DE-BPSK")
+    #s.semilogy(EbN0_range, ber_theory2, 'y-.', label="Theoretical DE-BPSK + BCH(15, 7, 2)")
+    s.semilogy(EbN0_range, ber_simu, 'b-o', label="Simulated DE-BPSK")
+    s.semilogy(EbN0_range, ber_simu2, 'r-o', label="Simulated DE-BPSK + BCH(15, 7, 2)")
     s.set_title('BER Simulation - DBPSK')
     s.set_xlabel('Eb/N0 (dB)')
     s.set_ylabel('BER')
