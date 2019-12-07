@@ -186,7 +186,7 @@ class BERAWGNSimu2(gr.top_block):
     def EbN0_to_noise_voltage(self, EbN0):
         """ Converts Eb/N0 to a complex noise voltage (assuming unit symbol power) """
 	#print("BITS PER SYMBOL: ", self.const.bits_per_symbol())
-        return 1.0 / math.sqrt(self.const.bits_per_symbol() * 10**(float(EbN0-10*math.log10(15/7))/10))
+        return 1.0 / math.sqrt(self.const.bits_per_symbol() * 10**(float(EbN0-10*math.log10(15.0/7.0))/10))
 
 
 def simulate_ber(EbN0):

@@ -89,7 +89,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>0</value>
+      <value>4</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -315,7 +315,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(880, 308)</value>
+      <value>(816, 308)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -362,7 +362,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(184, 228)</value>
+      <value>(96, 292)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -393,7 +393,7 @@
     <key>analog_noise_source_x</key>
     <param>
       <key>amp</key>
-      <value>1.0 / math.sqrt(const[const_type].bits_per_symbol() * 10**(float(EbN0-10*math.log10(15/7))/10))</value>
+      <value>1.0 / math.sqrt(const[const_type].bits_per_symbol() * 10**(float(EbN0-10*math.log10(15.0/7.0))/10.0))</value>
     </param>
     <param>
       <key>alias</key>
@@ -520,11 +520,11 @@ Ou (-10log10(63/30)) para (BCH(63, 30, 6))</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(16, 148)</value>
+      <value>(104, 60)</value>
     </param>
     <param>
       <key>_rotation</key>
-      <value>0</value>
+      <value>180</value>
     </param>
     <param>
       <key>id</key>
@@ -783,7 +783,7 @@ Ou (-10log10(63/30)) para (BCH(63, 30, 6))</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(200, 172)</value>
+      <value>(120, 212)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1042,7 +1042,7 @@ Ou (-10log10(63/30)) para (BCH(63, 30, 6))</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(760, 252)</value>
+      <value>(896, 308)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1128,7 +1128,7 @@ Ou (-10log10(63/30)) para (BCH(63, 30, 6))</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(72, 292)</value>
+      <value>(88, 156)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1137,49 +1137,6 @@ Ou (-10log10(63/30)) para (BCH(63, 30, 6))</value>
     <param>
       <key>id</key>
       <value>digital_diff_encoder_bb_0</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>modulus</key>
-      <value>2</value>
-    </param>
-  </block>
-  <block>
-    <key>digital_diff_encoder_bb</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(176, 60)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>digital_diff_encoder_bb_0_0</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -2067,13 +2024,13 @@ Ou (-10log10(63/30)) para (BCH(63, 30, 6))</value>
   </block>
   <connection>
     <source_block_id>ITpp_BCH_Decoder_0</source_block_id>
-    <sink_block_id>blks2_error_rate_0</sink_block_id>
+    <sink_block_id>digital_diff_decoder_bb_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
     <source_block_id>ITpp_BCH_Encoder_0</source_block_id>
-    <sink_block_id>digital_diff_encoder_bb_0</sink_block_id>
+    <sink_block_id>digital_chunks_to_symbols_xx_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -2091,7 +2048,19 @@ Ou (-10log10(63/30)) para (BCH(63, 30, 6))</value>
   </connection>
   <connection>
     <source_block_id>analog_random_source_x</source_block_id>
-    <sink_block_id>blocks_throttle</sink_block_id>
+    <sink_block_id>blks2_error_rate</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>1</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>analog_random_source_x</source_block_id>
+    <sink_block_id>blks2_error_rate_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>1</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>analog_random_source_x</source_block_id>
+    <sink_block_id>digital_diff_encoder_bb_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -2133,19 +2102,7 @@ Ou (-10log10(63/30)) para (BCH(63, 30, 6))</value>
   </connection>
   <connection>
     <source_block_id>blocks_throttle</source_block_id>
-    <sink_block_id>blks2_error_rate</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>1</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>blocks_throttle</source_block_id>
-    <sink_block_id>blks2_error_rate_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>1</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>blocks_throttle</source_block_id>
-    <sink_block_id>digital_diff_encoder_bb_0_0</sink_block_id>
+    <sink_block_id>digital_chunks_to_symbols_xx</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -2169,13 +2126,13 @@ Ou (-10log10(63/30)) para (BCH(63, 30, 6))</value>
   </connection>
   <connection>
     <source_block_id>digital_constellation_decoder_cb_0_0</source_block_id>
-    <sink_block_id>digital_diff_decoder_bb_0</sink_block_id>
+    <sink_block_id>ITpp_BCH_Decoder_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
     <source_block_id>digital_diff_decoder_bb_0</source_block_id>
-    <sink_block_id>ITpp_BCH_Decoder_0</sink_block_id>
+    <sink_block_id>blks2_error_rate_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -2187,13 +2144,7 @@ Ou (-10log10(63/30)) para (BCH(63, 30, 6))</value>
   </connection>
   <connection>
     <source_block_id>digital_diff_encoder_bb_0</source_block_id>
-    <sink_block_id>digital_chunks_to_symbols_xx_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>digital_diff_encoder_bb_0_0</source_block_id>
-    <sink_block_id>digital_chunks_to_symbols_xx</sink_block_id>
+    <sink_block_id>blocks_throttle</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
