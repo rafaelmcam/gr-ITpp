@@ -3,33 +3,38 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Top Block
-# Generated: Mon Jun  3 20:04:35 2019
+# Generated: Sat Dec  7 13:52:04 2019
 ##################################################
 
 
 from gnuradio import blocks
+from gnuradio import digital
 from gnuradio import eng_notation
 from gnuradio import gr
 from gnuradio.eng_option import eng_option
 from gnuradio.filter import firdes
 from optparse import OptionParser
 import ITpp
+import os
+import pmt
 
+import argparse
 
 class top_block(gr.top_block):
 
-    def __init__(self):
+    def __init__(self, delay):
         gr.top_block.__init__(self, "Top Block")
 
         ##################################################
         # Variables
         ##################################################
         self.samp_rate = samp_rate = 32000
-        self.delay = delay = 0
+        self.delay = delay = delay
 
         ##################################################
         # Blocks
         ##################################################
+        self.digital_diff_decoder_bb_0 = digital.diff_decoder_bb(2)
         self.blocks_unpack_k_bits_bb_0 = blocks.unpack_k_bits_bb(8)
         self.blocks_throttle_0 = blocks.throttle(gr.sizeof_char*1, samp_rate * 20,True)
         self.blocks_pack_k_bits_bb_1 = blocks.pack_k_bits_bb(8)
@@ -43,13 +48,14 @@ class top_block(gr.top_block):
         ##################################################
         # Connections
         ##################################################
-        self.connect((self.ITpp_BCH_Decoder_0, 0), (self.blocks_pack_k_bits_bb_1, 0))
+        self.connect((self.ITpp_BCH_Decoder_0, 0), (self.digital_diff_decoder_bb_0, 0))
         self.connect((self.blocks_delay_0, 0), (self.ITpp_BCH_Decoder_0, 0))
         self.connect((self.blocks_file_source_0, 0), (self.blocks_throttle_0, 0))
         self.connect((self.blocks_head_1, 0), (self.blocks_file_sink_0, 0))
         self.connect((self.blocks_pack_k_bits_bb_1, 0), (self.blocks_head_1, 0))
         self.connect((self.blocks_throttle_0, 0), (self.blocks_unpack_k_bits_bb_0, 0))
         self.connect((self.blocks_unpack_k_bits_bb_0, 0), (self.blocks_delay_0, 0))
+        self.connect((self.digital_diff_decoder_bb_0, 0), (self.blocks_pack_k_bits_bb_1, 0))
 
     def get_samp_rate(self):
         return self.samp_rate
@@ -68,7 +74,12 @@ class top_block(gr.top_block):
 
 def main(top_block_cls=top_block, options=None):
 
-    tb = top_block_cls()
+    parser = argparse.ArgumentParser(description='Specify Delay.')
+    parser.add_argument('--delay', type = int, default = 0, help='Decoding Delay')
+
+    args = parser.parse_args()
+
+    tb = top_block_cls(args.delay)
     tb.start()
     tb.wait()
 
