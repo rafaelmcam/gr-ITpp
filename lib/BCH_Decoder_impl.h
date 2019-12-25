@@ -30,6 +30,8 @@ namespace gr {
     {
      private:
       int d_N, d_K, d_T;
+      itpp::BCH bloco;
+      itpp::bvec decoded, encoded;
 
      public:
       BCH_Decoder_impl(int n, int t);

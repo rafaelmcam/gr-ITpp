@@ -47,15 +47,14 @@ namespace gr {
      * The private constructor
      */
     BCH_Decoder_impl::BCH_Decoder_impl(int n, int t)
-      : gr::block("BCH_Decoder",
+      : bloco(n, t), gr::block("BCH_Decoder",
               gr::io_signature::make(1, 1, sizeof(unsigned char)),
               gr::io_signature::make(1, 1, sizeof(unsigned char)))
     {
       d_N = n;
       d_T = t;
-      itpp:BCH block(d_N, d_T);
-      d_K = block.get_k();
-
+      d_K = bloco.get_k();
+      encoded.set_length(d_N);
       set_output_multiple(d_K);
     }
 
@@ -81,11 +80,7 @@ namespace gr {
       const unsigned char *in = (const unsigned char *) input_items[0];
       unsigned char *out = (unsigned char *) output_items[0];
 
-
-      itpp::bvec decoded, encoded;
-      encoded.set_length(d_N);
       encoded.zeros();
-      itpp::BCH block(d_N, d_T);
 
       for(int i = 0; i < noutput_items/d_K; i++){
         for(int j = 0; j < d_K; j++){
@@ -96,7 +91,7 @@ namespace gr {
           encoded(j) = in[d_N*i+j];
         }
 
-        decoded = block.decode(encoded);
+        decoded = bloco.decode(encoded);
 
         for(int j = 0; j < d_K; j++){
           out[d_K*i+j] = (int)decoded.get(j);
