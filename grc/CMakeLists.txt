@@ -22,5 +22,6 @@ install(FILES
     ITpp_BSC_Byte.xml
     ITpp_BCH_Encoder.xml
     ITpp_BCH_Decoder.xml
-    ITpp_RS_Encoder.xml DESTINATION share/gnuradio/grc/blocks
+    ITpp_RS_Encoder.xml
+    ITpp_RS_Decoder.xml DESTINATION share/gnuradio/grc/blocks
 )

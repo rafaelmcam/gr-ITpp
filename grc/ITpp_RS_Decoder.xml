@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<block>
+  <name>RS_Decoder</name>
+  <key>ITpp_RS_Decoder</key>
+  <category>[ITpp]</category>
+  <import>import ITpp</import>
+  <make>ITpp.RS_Decoder($m, $t)</make>
+
+  <param>
+    <name>Parâmetro m</name>
+    <key>m</key>
+    <type>int</type>
+  </param>
+
+  <param>
+    <name>Parâmetro T</name>
+    <key>t</key>
+    <type>int</type>
+  </param>
+
+  <sink>
+    <name>in</name>
+    <type>byte</type>
+  </sink>
+
+  <source>
+    <name>out</name>
+    <type>byte</type>
+  </source>
+
+ </block>

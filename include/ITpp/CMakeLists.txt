@@ -27,5 +27,6 @@ install(FILES
     BSC_Byte.h
     BCH_Encoder.h
     BCH_Decoder.h
-    RS_Encoder.h DESTINATION include/ITpp
+    RS_Encoder.h
+    RS_Decoder.h DESTINATION include/ITpp
 )
