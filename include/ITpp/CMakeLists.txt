@@ -26,5 +26,6 @@ install(FILES
     Hamming_Decoder_par.h
     BSC_Byte.h
     BCH_Encoder.h
-    BCH_Decoder.h DESTINATION include/ITpp
+    BCH_Decoder.h
+    RS_Encoder.h DESTINATION include/ITpp
 )

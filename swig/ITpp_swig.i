@@ -13,6 +13,7 @@
 #include "ITpp/BSC_Byte.h"
 #include "ITpp/BCH_Encoder.h"
 #include "ITpp/BCH_Decoder.h"
+#include "ITpp/RS_Encoder.h"
 %}
 
 
@@ -28,3 +29,5 @@ GR_SWIG_BLOCK_MAGIC2(ITpp, BSC_Byte);
 GR_SWIG_BLOCK_MAGIC2(ITpp, BCH_Encoder);
 %include "ITpp/BCH_Decoder.h"
 GR_SWIG_BLOCK_MAGIC2(ITpp, BCH_Decoder);
+%include "ITpp/RS_Encoder.h"
+GR_SWIG_BLOCK_MAGIC2(ITpp, RS_Encoder);
