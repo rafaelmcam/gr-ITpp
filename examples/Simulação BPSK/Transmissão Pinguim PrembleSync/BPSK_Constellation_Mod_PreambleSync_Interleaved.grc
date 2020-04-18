@@ -85,9 +85,7 @@
     <key>variable</key>
     <param>
       <key>comment</key>
-      <value>Modificações Com/Sem código
-
-Ativar e Desativar par Encoder/Decoder</value>
+      <value>Nesse esquemático usar apenas com código</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -95,7 +93,7 @@ Ativar e Desativar par Encoder/Decoder</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(872, 284)</value>
+      <value>(872, 340)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -330,7 +328,7 @@ Ativar e Desativar par Encoder/Decoder</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(640, 4)</value>
+      <value>(664, 4)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -429,60 +427,6 @@ Ativar e Desativar par Encoder/Decoder</value>
     <param>
       <key>value</key>
       <value>(1,1,1,1,1,0,0,1,1,0,1,0,1,0,0)</value>
-    </param>
-  </block>
-  <block>
-    <key>variable</key>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(816, 60)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>preamble16</value>
-    </param>
-    <param>
-      <key>value</key>
-      <value>str(1111100110101001)</value>
-    </param>
-  </block>
-  <block>
-    <key>variable</key>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(816, 4)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>preamble16Vec</value>
-    </param>
-    <param>
-      <key>value</key>
-      <value>(1,1,1,1,1,0,0,1,1,0,1,0,1,0,0, 1)</value>
     </param>
   </block>
   <block>
@@ -633,7 +577,7 @@ Ativar e Desativar par Encoder/Decoder</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(344, 156)</value>
+      <value>(328, 156)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -727,7 +671,7 @@ Ativar e Desativar par Encoder/Decoder</value>
     </param>
     <param>
       <key>blocksize</key>
-      <value>15 if UseCode else 16</value>
+      <value>30</value>
     </param>
     <param>
       <key>comment</key>
@@ -743,7 +687,7 @@ Ativar e Desativar par Encoder/Decoder</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(264, 872)</value>
+      <value>(288, 872)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -782,7 +726,7 @@ Ativar e Desativar par Encoder/Decoder</value>
     </param>
     <param>
       <key>blocksize</key>
-      <value>15 if UseCode else 16</value>
+      <value>15</value>
     </param>
     <param>
       <key>comment</key>
@@ -807,6 +751,116 @@ Ativar e Desativar par Encoder/Decoder</value>
     <param>
       <key>id</key>
       <value>blocks_deinterleave_0_0</value>
+    </param>
+    <param>
+      <key>type</key>
+      <value>byte</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>num_streams</key>
+      <value>2</value>
+    </param>
+    <param>
+      <key>vlen</key>
+      <value>1</value>
+    </param>
+  </block>
+  <block>
+    <key>blocks_deinterleave</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>blocksize</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(32, 928)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>blocks_deinterleave_0_0_0</value>
+    </param>
+    <param>
+      <key>type</key>
+      <value>byte</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>num_streams</key>
+      <value>2</value>
+    </param>
+    <param>
+      <key>vlen</key>
+      <value>1</value>
+    </param>
+  </block>
+  <block>
+    <key>blocks_deinterleave</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>blocksize</key>
+      <value>15</value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(504, 120)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>blocks_deinterleave_0_1</value>
     </param>
     <param>
       <key>type</key>
@@ -1042,6 +1096,116 @@ Ativar e Desativar par Encoder/Decoder</value>
     </param>
   </block>
   <block>
+    <key>blocks_interleave</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>blocksize</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(624, 120)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>blocks_interleave_1</value>
+    </param>
+    <param>
+      <key>type</key>
+      <value>byte</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>num_streams</key>
+      <value>2</value>
+    </param>
+    <param>
+      <key>vlen</key>
+      <value>1</value>
+    </param>
+  </block>
+  <block>
+    <key>blocks_interleave</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>blocksize</key>
+      <value>15</value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(168, 928)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>blocks_interleave_1_0</value>
+    </param>
+    <param>
+      <key>type</key>
+      <value>byte</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>num_streams</key>
+      <value>2</value>
+    </param>
+    <param>
+      <key>vlen</key>
+      <value>1</value>
+    </param>
+  </block>
+  <block>
     <key>blocks_null_sink</key>
     <param>
       <key>alias</key>
@@ -1202,7 +1366,7 @@ Ativar e Desativar par Encoder/Decoder</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(672, 172)</value>
+      <value>(944, 172)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1308,7 +1472,7 @@ Ativar e Desativar par Encoder/Decoder</value>
     </param>
     <param>
       <key>num_items</key>
-      <value>int(size_packed_file) // 4</value>
+      <value>int(size_packed_file) // 8</value>
     </param>
     <param>
       <key>type</key>
@@ -1339,7 +1503,7 @@ Ativar e Desativar par Encoder/Decoder</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(520, 160)</value>
+      <value>(760, 160)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1351,7 +1515,7 @@ Ativar e Desativar par Encoder/Decoder</value>
     </param>
     <param>
       <key>lengths</key>
-      <value>15 if UseCode else 16, 15 if UseCode else 16</value>
+      <value>30, 30</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -1551,11 +1715,11 @@ Ativar e Desativar par Encoder/Decoder</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(816, 172)</value>
+      <value>(920, 252)</value>
     </param>
     <param>
       <key>_rotation</key>
-      <value>0</value>
+      <value>180</value>
     </param>
     <param>
       <key>id</key>
@@ -1806,7 +1970,7 @@ Ativar e Desativar par Encoder/Decoder</value>
     </param>
     <param>
       <key>vector</key>
-      <value>preamble15Vec if UseCode else preamble16Vec</value>
+      <value>preamble15Vec</value>
     </param>
   </block>
   <block>
@@ -2096,7 +2260,7 @@ Ativar e Desativar par Encoder/Decoder</value>
     <key>digital_correlate_access_code_tag_bb</key>
     <param>
       <key>access_code</key>
-      <value>preamble15 if UseCode else preamble16</value>
+      <value>str(111110011010100111110011010100)</value>
     </param>
     <param>
       <key>alias</key>
@@ -2147,7 +2311,7 @@ Ativar e Desativar par Encoder/Decoder</value>
     <key>digital_correlate_access_code_tag_bb</key>
     <param>
       <key>access_code</key>
-      <value>preamble15 if UseCode else preamble16</value>
+      <value>str(111110011010100111110011010100)</value>
     </param>
     <param>
       <key>alias</key>
@@ -3514,11 +3678,11 @@ Ativar e Desativar par Encoder/Decoder</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(960, 172)</value>
+      <value>(664, 252)</value>
     </param>
     <param>
       <key>_rotation</key>
-      <value>0</value>
+      <value>180</value>
     </param>
     <param>
       <key>id</key>
@@ -3568,7 +3732,7 @@ Ativar e Desativar par Encoder/Decoder</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(128, 932)</value>
+      <value>(272, 940)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -3672,7 +3836,7 @@ Ativar e Desativar par Encoder/Decoder</value>
   </connection>
   <connection>
     <source_block_id>ITpp_BCH_Encoder_0</source_block_id>
-    <sink_block_id>blocks_stream_mux_0</sink_block_id>
+    <sink_block_id>blocks_deinterleave_0_1</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -3684,7 +3848,7 @@ Ativar e Desativar par Encoder/Decoder</value>
   </connection>
   <connection>
     <source_block_id>blocks_deinterleave_0</source_block_id>
-    <sink_block_id>virtual_sink_1</sink_block_id>
+    <sink_block_id>blocks_deinterleave_0_0_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -3713,6 +3877,30 @@ Ativar e Desativar par Encoder/Decoder</value>
     <sink_key>0</sink_key>
   </connection>
   <connection>
+    <source_block_id>blocks_deinterleave_0_0_0</source_block_id>
+    <sink_block_id>blocks_interleave_1_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>blocks_deinterleave_0_0_0</source_block_id>
+    <sink_block_id>blocks_interleave_1_0</sink_block_id>
+    <source_key>1</source_key>
+    <sink_key>1</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>blocks_deinterleave_0_1</source_block_id>
+    <sink_block_id>blocks_interleave_1</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>blocks_deinterleave_0_1</source_block_id>
+    <sink_block_id>blocks_interleave_1</sink_block_id>
+    <source_key>1</source_key>
+    <sink_key>1</sink_key>
+  </connection>
+  <connection>
     <source_block_id>blocks_delay_0</source_block_id>
     <sink_block_id>digital_correlate_access_code_tag_bb_0_0</sink_block_id>
     <source_key>0</source_key>
@@ -3727,6 +3915,18 @@ Ativar e Desativar par Encoder/Decoder</value>
   <connection>
     <source_block_id>blocks_head_0</source_block_id>
     <sink_block_id>blocks_file_sink_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>blocks_interleave_1</source_block_id>
+    <sink_block_id>blocks_stream_mux_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>blocks_interleave_1_0</source_block_id>
+    <sink_block_id>virtual_sink_1</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
