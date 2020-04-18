@@ -107,7 +107,7 @@ Ativar e Desativar par Encoder/Decoder</value>
     </param>
     <param>
       <key>value</key>
-      <value>False</value>
+      <value>True</value>
     </param>
   </block>
   <block>
@@ -582,11 +582,11 @@ Ativar e Desativar par Encoder/Decoder</value>
     </param>
     <param>
       <key>_enabled</key>
-      <value>2</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(696, 908)</value>
+      <value>(696, 876)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -629,7 +629,7 @@ Ativar e Desativar par Encoder/Decoder</value>
     </param>
     <param>
       <key>_enabled</key>
-      <value>2</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -720,57 +720,6 @@ Ativar e Desativar par Encoder/Decoder</value>
     </param>
   </block>
   <block>
-    <key>blks2_error_rate</key>
-    <param>
-      <key>bits_per_symbol</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(776, 780)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>blks2_error_rate_0</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>type</key>
-      <value>'BER'</value>
-    </param>
-    <param>
-      <key>win_size</key>
-      <value>10000</value>
-    </param>
-  </block>
-  <block>
     <key>blocks_deinterleave</key>
     <param>
       <key>alias</key>
@@ -778,7 +727,7 @@ Ativar e Desativar par Encoder/Decoder</value>
     </param>
     <param>
       <key>blocksize</key>
-      <value>16</value>
+      <value>15 if UseCode else 16</value>
     </param>
     <param>
       <key>comment</key>
@@ -833,7 +782,7 @@ Ativar e Desativar par Encoder/Decoder</value>
     </param>
     <param>
       <key>blocksize</key>
-      <value>16</value>
+      <value>15 if UseCode else 16</value>
     </param>
     <param>
       <key>comment</key>
@@ -1296,7 +1245,7 @@ Ativar e Desativar par Encoder/Decoder</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(832, 908)</value>
+      <value>(840, 876)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1339,7 +1288,7 @@ Ativar e Desativar par Encoder/Decoder</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(952, 908)</value>
+      <value>(952, 876)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1402,7 +1351,7 @@ Ativar e Desativar par Encoder/Decoder</value>
     </param>
     <param>
       <key>lengths</key>
-      <value>16, 16</value>
+      <value>15 if UseCode else 16, 15 if UseCode else 16</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -1657,7 +1606,7 @@ Ativar e Desativar par Encoder/Decoder</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(784, 696)</value>
+      <value>(760, 720)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1696,7 +1645,7 @@ Ativar e Desativar par Encoder/Decoder</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(784, 728)</value>
+      <value>(760, 752)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -3187,237 +3136,6 @@ Ativar e Desativar par Encoder/Decoder</value>
     </param>
   </block>
   <block>
-    <key>qtgui_number_sink</key>
-    <param>
-      <key>autoscale</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>avg</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(920, 780)</value>
-    </param>
-    <param>
-      <key>gui_hint</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>graph_type</key>
-      <value>qtgui.NUM_GRAPH_HORIZ</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>qtgui_number_sink_0</value>
-    </param>
-    <param>
-      <key>type</key>
-      <value>float</value>
-    </param>
-    <param>
-      <key>color1</key>
-      <value>("black", "black")</value>
-    </param>
-    <param>
-      <key>factor1</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>label1</key>
-      <value></value>
-    </param>
-    <param>
-      <key>unit1</key>
-      <value></value>
-    </param>
-    <param>
-      <key>color10</key>
-      <value>("black", "black")</value>
-    </param>
-    <param>
-      <key>factor10</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>label10</key>
-      <value></value>
-    </param>
-    <param>
-      <key>unit10</key>
-      <value></value>
-    </param>
-    <param>
-      <key>color2</key>
-      <value>("black", "black")</value>
-    </param>
-    <param>
-      <key>factor2</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>label2</key>
-      <value></value>
-    </param>
-    <param>
-      <key>unit2</key>
-      <value></value>
-    </param>
-    <param>
-      <key>color3</key>
-      <value>("black", "black")</value>
-    </param>
-    <param>
-      <key>factor3</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>label3</key>
-      <value></value>
-    </param>
-    <param>
-      <key>unit3</key>
-      <value></value>
-    </param>
-    <param>
-      <key>color4</key>
-      <value>("black", "black")</value>
-    </param>
-    <param>
-      <key>factor4</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>label4</key>
-      <value></value>
-    </param>
-    <param>
-      <key>unit4</key>
-      <value></value>
-    </param>
-    <param>
-      <key>color5</key>
-      <value>("black", "black")</value>
-    </param>
-    <param>
-      <key>factor5</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>label5</key>
-      <value></value>
-    </param>
-    <param>
-      <key>unit5</key>
-      <value></value>
-    </param>
-    <param>
-      <key>color6</key>
-      <value>("black", "black")</value>
-    </param>
-    <param>
-      <key>factor6</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>label6</key>
-      <value></value>
-    </param>
-    <param>
-      <key>unit6</key>
-      <value></value>
-    </param>
-    <param>
-      <key>color7</key>
-      <value>("black", "black")</value>
-    </param>
-    <param>
-      <key>factor7</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>label7</key>
-      <value></value>
-    </param>
-    <param>
-      <key>unit7</key>
-      <value></value>
-    </param>
-    <param>
-      <key>color8</key>
-      <value>("black", "black")</value>
-    </param>
-    <param>
-      <key>factor8</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>label8</key>
-      <value></value>
-    </param>
-    <param>
-      <key>unit8</key>
-      <value></value>
-    </param>
-    <param>
-      <key>color9</key>
-      <value>("black", "black")</value>
-    </param>
-    <param>
-      <key>factor9</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>label9</key>
-      <value></value>
-    </param>
-    <param>
-      <key>unit9</key>
-      <value></value>
-    </param>
-    <param>
-      <key>max</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>min</key>
-      <value>-1</value>
-    </param>
-    <param>
-      <key>name</key>
-      <value>""</value>
-    </param>
-    <param>
-      <key>nconnections</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>update_time</key>
-      <value>0.10</value>
-    </param>
-  </block>
-  <block>
     <key>qtgui_time_sink_x</key>
     <param>
       <key>autoscale</key>
@@ -3453,7 +3171,7 @@ Ativar e Desativar par Encoder/Decoder</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(920, 692)</value>
+      <value>(952, 716)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -3927,92 +3645,11 @@ Ativar e Desativar par Encoder/Decoder</value>
     </param>
     <param>
       <key>_enabled</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(544, 692)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>virtual_source_0_1</value>
-    </param>
-    <param>
-      <key>stream_id</key>
-      <value>MsgComPreambleSync</value>
-    </param>
-  </block>
-  <block>
-    <key>virtual_source</key>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(552, 724)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>virtual_source_0_1_0</value>
-    </param>
-    <param>
-      <key>stream_id</key>
-      <value>RcvComPreambleSync</value>
-    </param>
-  </block>
-  <block>
-    <key>virtual_source</key>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(552, 812)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>virtual_source_0_1_0_0</value>
-    </param>
-    <param>
-      <key>stream_id</key>
-      <value>RcvComPreambleSync</value>
-    </param>
-  </block>
-  <block>
-    <key>virtual_source</key>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
       <value>True</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(456, 908)</value>
+      <value>(456, 876)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -4025,33 +3662,6 @@ Ativar e Desativar par Encoder/Decoder</value>
     <param>
       <key>stream_id</key>
       <value>RcvComPreambleSync</value>
-    </param>
-  </block>
-  <block>
-    <key>virtual_source</key>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(552, 780)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>virtual_source_0_1_1</value>
-    </param>
-    <param>
-      <key>stream_id</key>
-      <value>MsgComPreambleSync</value>
     </param>
   </block>
   <connection>
@@ -4069,12 +3679,6 @@ Ativar e Desativar par Encoder/Decoder</value>
   <connection>
     <source_block_id>analog_random_source_x_0</source_block_id>
     <sink_block_id>blocks_unpack_k_bits_bb_1</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>blks2_error_rate_0</source_block_id>
-    <sink_block_id>qtgui_number_sink_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -4307,32 +3911,8 @@ Ativar e Desativar par Encoder/Decoder</value>
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>virtual_source_0_1</source_block_id>
-    <sink_block_id>blocks_uchar_to_float_1</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>virtual_source_0_1_0</source_block_id>
-    <sink_block_id>blocks_uchar_to_float_1_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>virtual_source_0_1_0_0</source_block_id>
-    <sink_block_id>blks2_error_rate_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>1</sink_key>
-  </connection>
-  <connection>
     <source_block_id>virtual_source_0_1_0_0_0</source_block_id>
     <sink_block_id>ITpp_BCH_Decoder_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>virtual_source_0_1_1</source_block_id>
-    <sink_block_id>blks2_error_rate_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
