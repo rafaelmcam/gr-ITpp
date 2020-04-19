@@ -230,7 +230,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>0.8</value>
+      <value>0.65</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -2472,7 +2472,7 @@
     </param>
     <param>
       <key>alpha</key>
-      <value>0.001</value>
+      <value>0.0001</value>
     </param>
     <param>
       <key>_coordinate</key>
