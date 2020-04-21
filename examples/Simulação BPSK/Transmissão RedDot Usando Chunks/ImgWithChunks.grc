@@ -237,6 +237,33 @@
     </param>
     <param>
       <key>_coordinate</key>
+      <value>(584, 4)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>path</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>"/home/rcampello/Main/FixedPath/OOT Gnuradio/gr-ITpp/examples/Simulação BPSK/Transmissão RedDot Usando Chunks/img_data.data"</value>
+    </param>
+  </block>
+  <block>
+    <key>variable</key>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
       <value>(184, 12)</value>
     </param>
     <param>
@@ -291,7 +318,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(288, 12)</value>
+      <value>(280, 12)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -303,7 +330,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>256 * 256 * 3</value>
+      <value>os.path.getsize(path)</value>
     </param>
   </block>
   <block>
@@ -702,7 +729,7 @@
     </param>
     <param>
       <key>file</key>
-      <value>/home/rcampello/Main/FixedPath/OOT Gnuradio/gr-ITpp/examples/Simulação BPSK/Transmissão RedDot Usando Chunks/penguin_data.data</value>
+      <value>path</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -1110,7 +1137,7 @@
     </param>
     <param>
       <key>import</key>
-      <value>import math</value>
+      <value>import math, os</value>
     </param>
   </block>
   <block>
