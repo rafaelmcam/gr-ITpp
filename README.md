@@ -9,4 +9,4 @@ Install apt-file (and apt-file update): check file dependencies in Ubuntu20 afte
 
 Some problem with PYTHONPATH? import ITpp_swig as ITpp?
 Check: https://wiki.gnuradio.org/index.php/ModuleNotFoundError
-After variable export .py script works from terminal. Flow graph don't work from companion.
+Variable export to .profile also (to work in companion shell).
