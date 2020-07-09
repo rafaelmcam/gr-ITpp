@@ -16,3 +16,7 @@ export PYTHONPATH="/usr/local/lib/python3/dist-packages:$PYTHONPATH"
 ```
 
 Variable export to .profile also (to work in companion shell) (set all shells) (+logout).
+
+
+TODO:
+C++ ITpp block initialization in class constructor + port main branch version and blocks.
