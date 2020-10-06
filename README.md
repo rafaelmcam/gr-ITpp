@@ -28,5 +28,11 @@ cmake ../ -DCMAKE_BUILD_TYPE=Debug
 
 [VSCode](https://wiki.gnuradio.org/index.php/UsingVSCode)
 
+### Callback usage:
+
+Currently done on BSC_Byte.
+
+See: gr-blocks/add_const (set_k) example: 4 redefinitions: include virtual function, on lib/header file override it, define on main.cc and include template callback on grc.
+
 # TODO:
 C++ ITpp block initialization in class constructor + port main branch version and blocks.
