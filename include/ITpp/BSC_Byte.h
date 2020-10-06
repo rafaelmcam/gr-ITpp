@@ -46,6 +46,8 @@ namespace gr {
        * creating new instances.
        */
       static sptr make(int bits, float probability);
+
+        virtual void set_p(float update_p) = 0;
     };
 
   } // namespace ITpp

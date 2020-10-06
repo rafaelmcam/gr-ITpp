@@ -35,6 +35,7 @@ namespace gr {
      public:
       BSC_Byte_impl(int bits, float probability);
       ~BSC_Byte_impl();
+      void set_p(float update_p) override;
 
       // Where all the action really happens
       int work(int noutput_items,

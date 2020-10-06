@@ -65,6 +65,10 @@ namespace gr {
     {
     }
 
+    void BSC_Byte_impl::set_p(float update_p){
+        d_probability = update_p;
+    }
+
     int
     BSC_Byte_impl::work(int noutput_items,
         gr_vector_const_void_star &input_items,
@@ -76,7 +80,7 @@ namespace gr {
       itpp::bvec entrada_bits;
       entrada_bits.set_length(d_bits);
       entrada_bits.zeros();
-      
+
       for(int j = 0; j < noutput_items; j++){
         out[j] = 0;
 

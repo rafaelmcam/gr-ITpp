@@ -20,8 +20,13 @@ outputs:
 -   domain: stream
     dtype: byte
 
+asserts:
+    - ${ probability >= 0 }
+
 templates:
     imports: import ITpp
     make: ITpp.BSC_Byte(${bits}, ${probability})
+    callbacks:
+    - set_p(${probability})
 
 file_format: 1
